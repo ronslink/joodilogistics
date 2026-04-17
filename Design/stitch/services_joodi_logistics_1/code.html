@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eceef1",
+                    "on-secondary-container": "#556474",
+                    "secondary": "#50606f",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-error": "#ffffff",
+                    "tertiary": "#240f00",
+                    "surface-tint": "#435b9f",
+                    "outline-variant": "#c5c6d2",
+                    "on-surface": "#191c1e",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#d4e4f6",
+                    "tertiary-fixed": "#ffdcc3",
+                    "surface": "#f7f9fc",
+                    "on-tertiary-fixed": "#2f1500",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#00174a",
+                    "primary": "#00113a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#d97600",
+                    "on-surface-variant": "#444650",
+                    "on-secondary-fixed-variant": "#394857",
+                    "surface-container-low": "#f2f4f7",
+                    "inverse-primary": "#b3c5ff",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#d1e1f4",
+                    "inverse-surface": "#2d3133",
+                    "surface-dim": "#d8dadd",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "primary-container": "#002366",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "surface-container-high": "#e6e8eb",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dbe1ff",
+                    "tertiary-container": "#422000",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#758dd5",
+                    "outline": "#757682",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f7f9fc",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-white">GlobalTrade</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-blue-900 dark:text-white border-b-2 border-blue-900 dark:border-white pb-1" href="#">Services</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">About</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded shadow-sm hover:opacity-90 active:scale-95 duration-200 font-manrope font-bold text-sm tracking-wide">Track Shipment</button>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-surface py-24 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 z-10">
+<span class="text-label-md font-bold text-on-tertiary-container tracking-[0.2em] uppercase mb-4 block">Engineered Logistics</span>
+<h1 class="text-[3.5rem] leading-[1.1] font-extrabold text-primary mb-6 tracking-tighter max-w-xl">
+                        Precision Velocity for the Global Marketplace.
+                    </h1>
+<p class="text-on-surface-variant text-lg max-w-lg mb-8 leading-relaxed">
+                        Joodi Logistics orchestrates complex supply chains with editorial precision. From international freight to the final mile, we move trade forward.
+                    </p>
+<div class="flex gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-lg font-bold hover:shadow-lg transition-all">Explore Network</button>
+<button class="text-primary font-bold px-8 py-4 flex items-center gap-2 group">
+                            Our Methodology 
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="flex-1 relative">
+<div class="absolute -top-12 -right-12 w-64 h-64 bg-tertiary-fixed rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+<div class="bg-surface-container-highest rounded-2xl overflow-hidden relative shadow-2xl">
+<img class="w-full h-[500px] object-cover" data-alt="Modern high-tech logistics warehouse with automated sorting systems and sharp blue industrial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXHkQJDvpNr96RemWh-MzLHZOjCkX5bpzMoWfo166f66aZ2n4JM6A7OeHLRDY2uPonwOiRImqXA5W7TrgzwxGRZNF6RqOszH-UUwSqv6XAMNtTqWR6QQhhQFvZKXhz2lYpqxQSW_1Ihjccev6vHXXTfTDfKVWHMk6VvWq26jCgLTnRhit1CwJxASSQNNBj-A8UwLGaIpLaaL_o0orZz05dVwKvE57Hhyl_quh-4WJrDd9uWmzCzbtdPFl6LpIurIEjNRiqorXOMuSs"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-headline-md font-extrabold text-primary tracking-tight mb-2">Our Core Capabilities</h2>
+<div class="h-1 w-24 bg-tertiary-fixed-dim"></div>
+</div>
+<p class="text-on-surface-variant max-w-xs text-sm">Tailored solutions for complex global operations, managed through a single integrated interface.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- International Freight - Large Feature -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between group hover:shadow-md transition-shadow">
+<div class="flex justify-between items-start">
+<div class="bg-secondary-container p-4 rounded-lg">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="public">public</span>
+</div>
+<span class="text-label-md font-bold text-on-surface-variant opacity-40">01</span>
+</div>
+<div class="mt-12">
+<h3 class="text-2xl font-extrabold text-primary mb-4">International Freight</h3>
+<p class="text-on-surface-variant leading-relaxed mb-6 max-w-xl">
+                                Seamless ocean, air, and land transportation across 140 countries. Our multimodal network ensures your cargo arrives with maximum efficiency and minimum environmental impact.
+                            </p>
+<div class="flex gap-4 text-sm font-bold text-primary">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Customs Clearance</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Real-time Tracking</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">check_circle</span> Cargo Insurance</span>
+</div>
+</div>
+</div>
+<!-- Last Mile Delivery -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-10 flex flex-col justify-between group overflow-hidden relative">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="local_shipping">local_shipping</span>
+</div>
+<div class="bg-primary-container p-4 rounded-lg w-fit">
+<span class="material-symbols-outlined text-on-primary text-3xl" data-icon="local_shipping">local_shipping</span>
+</div>
+<div class="relative z-10">
+<span class="text-label-md font-bold opacity-60 mb-2 block uppercase">Consumer Direct</span>
+<h3 class="text-2xl font-extrabold mb-4">Last-Mile Delivery</h3>
+<p class="text-primary-fixed leading-relaxed text-sm opacity-80">
+                                Hyper-local fulfillment and white-glove delivery services designed for the modern e-commerce landscape.
+                            </p>
+</div>
+</div>
+<!-- Warehousing -->
+<div class="md:col-span-4 bg-surface-container-lowest rounded-xl p-10 flex flex-col justify-between hover:shadow-md transition-shadow">
+<div>
+<div class="bg-tertiary-fixed p-4 rounded-lg w-fit mb-8">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl" data-icon="warehouse">warehouse</span>
+</div>
+<h3 class="text-xl font-extrabold text-primary mb-3">Intelligent Warehousing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                Automated inventory management with climate-controlled zones and real-time stock visibility.
+                            </p>
+</div>
+<div class="mt-8 pt-8 border-t border-surface-container">
+<a class="text-primary font-bold text-sm flex items-center gap-2" href="#">View Locations <span class="material-symbols-outlined text-sm">open_in_new</span></a>
+</div>
+</div>
+<!-- Supply Chain Management -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-10 flex flex-col md:flex-row gap-10 hover:shadow-md transition-shadow">
+<div class="flex-1">
+<div class="bg-secondary-container p-4 rounded-lg w-fit mb-8">
+<span class="material-symbols-outlined text-primary text-3xl" data-icon="account_tree">account_tree</span>
+</div>
+<h3 class="text-xl font-extrabold text-primary mb-3">Supply Chain Orchestration</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+                                End-to-end consulting and management. We analyze your data to eliminate bottlenecks and optimize procurement workflows globally.
+                            </p>
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-3 rounded font-bold text-sm">Consultation</button>
+</div>
+<div class="flex-1 bg-surface-container rounded-lg overflow-hidden h-48 md:h-auto">
+<img class="w-full h-full object-cover grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition-all duration-700" data-alt="Close up of a tablet screen displaying complex logistics data charts and a world map with shipping routes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeIAlaN78UejtWvWLo7CeXgVM_hWYdBBv3BQGbcImQ1oUIlKMCGoNUvPOJnUMdb-GMJvGMECWG9CetApNqBJGLJjMe_7dRxiS3LE8kncR2zJxsrULHjNnwWHTyGCgyue3mSLumOm19FZzM6Ns4HCCedm9AP0wQvi6l2EYSwWJQd88GFr6EuMvnHIiDKIPmHGKlX7WfuPxbmSdTFWIHhaY6e_MHUIXovPb5_Vj9-Lb_2zoyPIQpuiHiwak3Ajc0j0J2f9faT4qkt-gg"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+<div>
+<p class="text-[2.5rem] font-extrabold text-primary mb-1">99.8%</p>
+<p class="text-label-md font-bold text-on-surface-variant tracking-widest uppercase">Accuracy Rate</p>
+</div>
+<div>
+<p class="text-[2.5rem] font-extrabold text-primary mb-1">140+</p>
+<p class="text-label-md font-bold text-on-surface-variant tracking-widest uppercase">Global Ports</p>
+</div>
+<div>
+<p class="text-[2.5rem] font-extrabold text-primary mb-1">2M+</p>
+<p class="text-label-md font-bold text-on-surface-variant tracking-widest uppercase">Sqm Managed</p>
+</div>
+<div>
+<p class="text-[2.5rem] font-extrabold text-primary mb-1">24/7</p>
+<p class="text-label-md font-bold text-on-surface-variant tracking-widest uppercase">Control Center</p>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8">
+<div class="max-w-7xl mx-auto bg-primary-container rounded-2xl p-12 md:p-20 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.2) 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="flex-1 relative z-10 text-center md:text-left">
+<h2 class="text-4xl font-extrabold text-white mb-6">Ready to optimize your global reach?</h2>
+<p class="text-on-primary-container text-lg mb-8 max-w-xl">Join 500+ global enterprises that trust Joodi Logistics to manage their mission-critical operations.</p>
+</div>
+<div class="relative z-10">
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-12 py-5 rounded-lg font-extrabold text-lg shadow-xl hover:-translate-y-1 transition-transform">Get a Quote</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="space-y-4">
+<div class="text-lg font-black text-blue-900 dark:text-white uppercase tracking-tighter">GlobalTrade</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-xs font-medium uppercase tracking-widest max-w-md">© 2024 GlobalTrade Logistics. Precision Velocity.</p>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Imprint</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-2">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Global Network</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

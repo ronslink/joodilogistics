@@ -1,0 +1,36 @@
+# Project: Joodi Logistics MVP
+
+## Overview
+A high-performance, professional brochure website for a logistics company, built with Astro and Tailwind CSS. Designed for deployment on a Hetzner server with Nginx.
+
+## Core Pages (MVP Scope)
+1. **Home:** Professional hero section, value proposition, and quick links.
+2. **About:** Company background and mission.
+3. **Services:** Detailed breakdown of logistics and international transport services.
+4. **Contact:** Integrated contact form (via Formspree) and business details.
+5. **Imprint (Impressum):** Legally required business information for Germany.
+6. **Privacy Policy (Datenschutzerklärung):** GDPR-compliant privacy details.
+
+## Technical Stack
+- **Framework:** Astro (Static Site Generation)
+- **Styling:** Tailwind CSS
+- **Deployment:** Nginx on Hetzner Server
+- **SSL:** Certbot (Let's Encrypt)
+- **Form Handling:** Formspree (jp@odidika.de)
+
+## Nginx Configuration (Draft)
+```nginx
+server {
+    listen 80;
+    server_name joodi-logistics.de www.joodi-logistics.de;
+
+    root /var/www/joodi-site/dist;
+    index index.html;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    # SSL configuration will be added by Certbot
+}
+```

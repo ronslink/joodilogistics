@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-container": "#d1e1f4",
+                    "on-secondary-container": "#556474",
+                    "surface": "#f7f9fc",
+                    "on-tertiary": "#ffffff",
+                    "outline": "#757682",
+                    "outline-variant": "#c5c6d2",
+                    "on-surface-variant": "#444650",
+                    "error-container": "#ffdad6",
+                    "background": "#f7f9fc",
+                    "surface-container-highest": "#e0e3e6",
+                    "error": "#ba1a1a",
+                    "surface-container": "#eceef1",
+                    "surface-container-low": "#f2f4f7",
+                    "surface-dim": "#d8dadd",
+                    "on-secondary": "#ffffff",
+                    "on-secondary-fixed-variant": "#394857",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "tertiary": "#240f00",
+                    "surface-container-high": "#e6e8eb",
+                    "surface-tint": "#435b9f",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-primary-fixed": "#00174a",
+                    "tertiary-container": "#422000",
+                    "inverse-on-surface": "#eff1f4",
+                    "on-primary-container": "#758dd5",
+                    "surface-variant": "#e0e3e6",
+                    "on-tertiary-container": "#d97600",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "secondary-fixed": "#d4e4f6",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "secondary": "#50606f",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-fixed": "#dbe1ff",
+                    "primary": "#00113a",
+                    "primary-container": "#002366",
+                    "on-error": "#ffffff",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#ffdcc3",
+                    "on-surface": "#191c1e",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#f7f9fc",
+                    "on-tertiary-fixed": "#2f1500",
+                    "inverse-surface": "#2d3133",
+                    "inverse-primary": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#6e3900"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .tonal-shift { transition: background-color 0.3s ease; }
+      .glass-nav { backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-slate-50/80 backdrop-blur-xl shadow-sm">
+<div class="flex justify-between items-center px-8 h-20 max-w-screen-2xl mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-blue-950">
+                Joodi International
+            </div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope font-semibold text-sm tracking-tight text-slate-600 hover:text-blue-800 transition-colors" href="#">Home</a>
+<a class="font-manrope font-semibold text-sm tracking-tight text-slate-600 hover:text-blue-800 transition-colors" href="#">Services</a>
+<a class="font-manrope font-semibold text-sm tracking-tight text-slate-600 hover:text-blue-800 transition-colors" href="#">About</a>
+<a class="font-manrope font-semibold text-sm tracking-tight text-slate-600 hover:text-blue-800 transition-colors" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-manrope font-semibold text-sm active:scale-95 duration-200 shadow-sm">
+                    Track Shipment
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 lg:px-24 max-w-screen-xl mx-auto">
+<!-- Hero Section Asymmetry -->
+<header class="mb-20">
+<span class="label-md text-on-surface-variant tracking-[0.2em] uppercase text-xs mb-4 block">Legal Disclosure</span>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-primary leading-[0.9] tracking-tighter max-w-3xl">
+                Imprint / <br/><span class="text-on-primary-container">Impressum</span>
+</h1>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Side: Core Info -->
+<div class="lg:col-span-7 space-y-16">
+<!-- Entity Identification -->
+<section class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+<h2 class="font-headline font-bold text-2xl text-primary mb-8">Provider Information</h2>
+<div class="space-y-6">
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Company Name</p>
+<p class="text-xl font-medium text-on-surface">Joodi International Logistics and Spedition</p>
+</div>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Legal Representative</p>
+<p class="text-xl font-medium text-on-surface">John-Paul Odidika (CEO)</p>
+</div>
+</div>
+</section>
+<!-- Contact & Location -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface-container-low p-8 rounded-xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<h3 class="font-headline font-bold text-lg">Address</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Douglasienweg 1<br/>
+                            71364 Winnenden<br/>
+                            Germany
+                        </p>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+<h3 class="font-headline font-bold text-lg">Contact</h3>
+</div>
+<p class="text-on-surface-variant mb-1 italic">Direct inquiries to:</p>
+<a class="text-primary font-semibold hover:underline" href="mailto:jp@odidika.de">jp@odidika.de</a>
+</div>
+</section>
+<!-- Editorial Legal Content -->
+<section class="prose prose-slate max-w-none space-y-8 text-on-surface-variant">
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-4">Dispute Resolution</h3>
+<p class="leading-relaxed">
+                            The European Commission provides a platform for online dispute resolution (OS), which you can find here: <a class="text-primary-container font-medium hover:underline" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>. We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.
+                        </p>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-4">Liability for Content</h3>
+<p class="leading-relaxed">
+                            As a service provider, we are responsible for our own content on these pages in accordance with general laws according to § 7 Para.1 TMG. According to §§ 8 to 10 TMG, however, we as service providers are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+                        </p>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl text-primary mb-4">Copyright</h3>
+<p class="leading-relaxed">
+                            The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator.
+                        </p>
+</div>
+</section>
+</div>
+<!-- Right Side: Visual Anchor & Quick Access -->
+<aside class="lg:col-span-5 space-y-8">
+<div class="sticky top-32">
+<div class="relative overflow-hidden rounded-2xl h-[400px] bg-primary mb-8 group">
+<img alt="Logistics warehouse" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 transition-transform duration-700 group-hover:scale-110" data-alt="Modern logistics distribution center with rows of shelves and organized cargo under bright industrial lighting in a blue tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJQX8uWijKz4ZEfhocmA2gvPwX00eaAkNn1Kc6ghTnWQF8fE0MPKxY-l6rcoUwdkoDZAM7cfXelOfmpSRs1WEmvnOLoTMW53UT-qS8U0JT4eZysITz7YaUQk8A5qOriBJoOTChdDP3qWXaaVLNUXicH0AvHJRD7_h8NnXLZ9N36NjniE9ajZzGINc2EOR6ZcgAVb7Rb5a8bRreQQdI4BlZirkcN_GKDRJJ004DO7LZr_mwDo7uegMa64h1X9Vp3ldCoDbc0wJkMOj1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+<h4 class="text-white font-headline font-bold text-2xl mb-2">Global Trade Simplified.</h4>
+<p class="text-blue-200/80 text-sm">Managing your global supply chain with German precision and international reach.</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-xl border-l-4 border-tertiary-fixed-dim">
+<h4 class="font-headline font-bold text-primary mb-4">Registry Information</h4>
+<ul class="space-y-4 text-sm text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span class="font-medium">Register Court</span>
+<span>Amtsgericht Stuttgart</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/20 pb-2">
+<span class="font-medium">Company ID</span>
+<span>Pending</span>
+</li>
+<li class="flex justify-between">
+<span class="font-medium">Tax ID</span>
+<span>Pending</span>
+</li>
+</ul>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 gap-6 max-w-screen-2xl mx-auto">
+<div class="text-lg font-bold text-blue-900">Joodi International</div>
+<div class="flex gap-8">
+<a class="font-inter text-xs tracking-wide uppercase text-blue-900 font-bold" href="#">Imprint</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-orange-600 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs tracking-wide uppercase text-slate-500 hover:text-orange-600 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="font-inter text-xs tracking-wide uppercase text-slate-500 text-center md:text-right">
+                © 2024 Joodi International. All rights reserved. 123 Logistics Plaza, Global Trade Zone.
+            </div>
+</div>
+</footer>
+</body></html>

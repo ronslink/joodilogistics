@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Joodi Logistics | Precision Velocity</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-bright": "#f7f9fc",
+                        "surface": "#f7f9fc",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed": "#2f1500",
+                        "on-surface": "#191c1e",
+                        "secondary": "#50606f",
+                        "surface-container-low": "#f2f4f7",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "on-primary-fixed": "#00174a",
+                        "tertiary-container": "#422000",
+                        "tertiary-fixed": "#ffdcc3",
+                        "surface-container": "#eceef1",
+                        "inverse-surface": "#2d3133",
+                        "secondary-fixed": "#d4e4f6",
+                        "inverse-on-surface": "#eff1f4",
+                        "primary-fixed": "#dbe1ff",
+                        "on-surface-variant": "#444650",
+                        "background": "#f7f9fc",
+                        "primary-container": "#002366",
+                        "on-error-container": "#93000a",
+                        "surface-variant": "#e0e3e6",
+                        "outline-variant": "#c5c6d2",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#435b9f",
+                        "on-background": "#191c1e",
+                        "secondary-container": "#d1e1f4",
+                        "tertiary": "#240f00",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "primary": "#00113a",
+                        "on-tertiary-container": "#d97600",
+                        "on-primary-container": "#758dd5",
+                        "surface-container-high": "#e6e8eb",
+                        "outline": "#757682",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "inverse-primary": "#b3c5ff",
+                        "on-secondary-container": "#556474",
+                        "surface-container-highest": "#e0e3e6",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "on-secondary-fixed-variant": "#394857",
+                        "surface-dim": "#d8dadd"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #00113a 0%, #002366 100%);
+        }
+        .glass-nav {
+            background: rgba(247, 249, 252, 0.8);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 shadow-sm glass-nav">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-950 dark:text-white font-headline">
+                Joodi Logistics
+            </div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-headline font-semibold text-sm tracking-tight text-blue-900 dark:text-blue-400 border-b-2 border-blue-900 dark:border-blue-400 pb-1" href="#">Home</a>
+<a class="font-headline font-semibold text-sm tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="font-headline font-semibold text-sm tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">About</a>
+<a class="font-headline font-semibold text-sm tracking-tight text-slate-500 dark:text-slate-400 hover:text-blue-900 dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-2.5 rounded-lg font-headline font-bold text-sm tracking-tight hover:opacity-90 active:scale-95 transition-all">
+                Track Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 md:pt-48 md:pb-40 px-8 overflow-hidden bg-primary overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-30 mix-blend-overlay" data-alt="Cinematic wide shot of a massive cargo ship and freight airplane at a sunset-lit industrial port with deep blue and orange hues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfAMeICdIE_vJifAhuWBqsp3avxjTXaAAzsKbY61FyscMjbG9Bgj_qhAPcxlvWcAU8AqG3wJNh7N7ADTQ4SWYdzySUHkoCTziUEMHAqnHUD6uwZ75HSFwOe142bThqia3BUDl6Xfu4JcmS_Cmxje8H9_oF4W0wUWJmqt3WRlkGQxUAV2ZpPZKu6hEBWpy76UWMWNIDZCHHxyT35k7UYx3dzo_0OVqCRwthY0VHJCi7QgI5AffF4ZSw-DQg8lWfXjh69cJewAc4vbpO"/>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-8">
+<h1 class="font-headline text-[3.5rem] leading-[1.1] font-extrabold tracking-tight text-white mb-6">
+                    Precision Velocity:<br/>Orchestrating Global Trade.
+                </h1>
+<p class="text-xl text-primary-fixed-dim max-w-2xl font-light leading-relaxed mb-10">
+                    We transcend standard logistics by integrating advanced intelligence with heavy-duty infrastructure. Experience the authority of a global leader in seamless freight operations.
+                </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-8 py-4 rounded-lg font-headline font-extrabold text-base tracking-tight hover:opacity-90 transition-all shadow-lg">
+                        Get a Custom Quote
+                    </button>
+<button class="bg-primary-container text-white px-8 py-4 rounded-lg font-headline font-bold text-base tracking-tight hover:bg-opacity-80 transition-all border border-outline-variant/20">
+                        Explore Our Network
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Why Choose Us - Bento Grid -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<span class="text-xs font-label uppercase tracking-widest text-on-tertiary-container font-semibold">The Joodi Standard</span>
+<h2 class="font-headline text-4xl font-bold text-primary mt-2">Why Global Leaders Choose Us</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Large Feature Card -->
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl flex flex-col justify-between group transition-all">
+<div>
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="rocket_launch">rocket_launch</span>
+<h3 class="font-headline text-2xl font-bold text-primary mb-4">Hyper-Efficient Velocity</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                            Our proprietary routing algorithms reduce transit times by up to 18% compared to traditional logistics frameworks.
+                        </p>
+</div>
+<div class="mt-12 overflow-hidden rounded-lg h-48">
+<img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="High-speed motion blur of a modern truck on a highway at night, showing light trails and precision motion" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7r2t9O-m9m60i3tMFGFwjCOxaS-naFNBc2v8AJUqXAbnmFm7Od4-uVtDkPBCx6n5FmsiCffhYXRw3zzF8YHe5Sa-pAg0Erhb56Tl4e8xP67D6dPEDDW-nE97aV2jQDuK6ah-FUjzP7SPebm3N9nYpURu6ChWFLVAb-jsoj7A1wc-oVn_IZHJeqCSkS8lAWFtjjeKQ6nqdt2EZoS63-mJOCeindZNljWpC-DwNRAx_eu-XIiK6jL607zkl0S81Ry88hkQ8_fuFoUc_"/>
+</div>
+</div>
+<!-- Vertical Feature Card -->
+<div class="bg-primary p-10 rounded-xl text-white flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-6" data-icon="shield_with_heart" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Unmatched Reliability</h3>
+<p class="text-primary-fixed-dim leading-relaxed">
+                            A 99.9% successful delivery rate across all intermodal transitions, backed by full-spectrum asset protection.
+                        </p>
+</div>
+<div class="mt-8 pt-8 border-t border-primary-container">
+<div class="text-4xl font-extrabold text-tertiary-fixed-dim">99.9%</div>
+<div class="text-xs uppercase tracking-widest opacity-60 mt-1">Uptime Performance</div>
+</div>
+</div>
+<!-- Regular Feature Card -->
+<div class="bg-surface-container p-10 rounded-xl">
+<span class="material-symbols-outlined text-4xl text-primary mb-6" data-icon="language">language</span>
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Global Reach</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                        Direct presence in over 140 countries with local customs expertise in every major trade hub.
+                    </p>
+</div>
+<!-- Data Driven Card -->
+<div class="bg-surface-container-lowest p-10 rounded-xl md:col-span-2 flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
+<div class="flex-1">
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Real-Time Intelligence</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                            Control towers that provide end-to-end visibility, utilizing IoT sensors to monitor cargo temperature, humidity, and precise geo-location.
+                        </p>
+</div>
+<div class="flex-1 w-full h-40 bg-surface-container-highest rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-6xl text-primary/20" data-icon="monitoring">monitoring</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Core Services -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div class="max-w-2xl">
+<span class="text-xs font-label uppercase tracking-widest text-on-tertiary-container font-semibold">Operational Excellence</span>
+<h2 class="font-headline text-4xl font-bold text-primary mt-2">Specialized Global Services</h2>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-2" href="#">
+                    View All Capabilities <span class="material-symbols-outlined">arrow_right_alt</span>
+</a>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-0 bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<!-- Service 1 -->
+<div class="p-12 hover:bg-primary hover:text-white transition-all duration-500 group">
+<div class="text-tertiary-container group-hover:text-tertiary-fixed-dim transition-colors mb-8">
+<span class="material-symbols-outlined text-5xl" data-icon="airplanemode_active" style="font-variation-settings: 'FILL' 1;">airplanemode_active</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Air Freight</h3>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim transition-colors mb-8 leading-relaxed">
+                        Urgent global transport for time-sensitive cargo. Premium terminal handling and express customs clearance.
+                    </p>
+<ul class="space-y-3 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Next-Flight Out</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Charter Solutions</li>
+</ul>
+</div>
+<!-- Service 2 -->
+<div class="p-12 border-x border-outline-variant/10 hover:bg-primary hover:text-white transition-all duration-500 group">
+<div class="text-tertiary-container group-hover:text-tertiary-fixed-dim transition-colors mb-8">
+<span class="material-symbols-outlined text-5xl" data-icon="directions_boat" style="font-variation-settings: 'FILL' 1;">directions_boat</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Ocean Logistics</h3>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim transition-colors mb-8 leading-relaxed">
+                        Full container load (FCL) and consolidated (LCL) shipments via our strategic carrier partnerships.
+                    </p>
+<ul class="space-y-3 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Trans-Pacific Experts</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Green Sea Solutions</li>
+</ul>
+</div>
+<!-- Service 3 -->
+<div class="p-12 hover:bg-primary hover:text-white transition-all duration-500 group">
+<div class="text-tertiary-container group-hover:text-tertiary-fixed-dim transition-colors mb-8">
+<span class="material-symbols-outlined text-5xl" data-icon="warehouse" style="font-variation-settings: 'FILL' 1;">warehouse</span>
+</div>
+<h3 class="font-headline text-2xl font-bold mb-4">Smart Warehousing</h3>
+<p class="text-on-surface-variant group-hover:text-primary-fixed-dim transition-colors mb-8 leading-relaxed">
+                        Strategic distribution centers equipped with advanced WMS for automated fulfillment and inventory control.
+                    </p>
+<ul class="space-y-3 text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Cold Chain Storage</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-xs">check_circle</span> Last-Mile Integration</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Get a Quote CTA -->
+<section class="py-24 px-8 bg-primary overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[30rem] leading-none select-none" data-icon="hub">hub</span>
+</div>
+<div class="max-w-4xl mx-auto text-center relative z-10">
+<h2 class="font-headline text-[3rem] font-extrabold text-white mb-6">Ready to Accelerate Your Global Trade?</h2>
+<p class="text-xl text-primary-fixed-dim mb-12">
+                Consult with our logistics architects to design a supply chain that outpaces the competition.
+            </p>
+<div class="inline-flex flex-col md:flex-row gap-4 w-full md:w-auto">
+<input class="bg-surface-container-highest/20 border-none text-white placeholder-primary-fixed-dim/50 rounded-lg px-8 py-4 w-full md:w-80 focus:ring-2 focus:ring-tertiary-fixed-dim transition-all outline-none" placeholder="Enter your business email" type="email"/>
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-10 py-4 rounded-lg font-headline font-extrabold text-base tracking-tight hover:opacity-90 transition-all">
+                    Request a Quote
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full py-12 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-t border-slate-200/50 dark:border-slate-800/50 pt-8">
+<div class="flex flex-col gap-4">
+<div class="font-['Manrope'] font-bold text-blue-900 dark:text-blue-100 text-xl">Joodi Logistics</div>
+<p class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                    © 2024 Joodi Logistics. Orchestrating Global Trade.
+                </p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors underline" href="#">Imprint</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors underline" href="#">Privacy Policy</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors underline" href="#">Terms of Service</a>
+<a class="font-['Inter'] text-xs uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors underline" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+</body></html>

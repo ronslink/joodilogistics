@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Contact Us">
+  <!-- Hero Section -->
+  <section class="relative min-h-[409px] flex items-center overflow-hidden bg-surface-container-low px-8 md:px-16 lg:px-24">
+    <div class="max-w-screen-xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 z-10">
+        <h1 class="font-headline text-5xl md:text-6xl font-extrabold text-primary leading-tight tracking-tight mb-6">
+          Get in Touch with Our <br/>Logistics Experts
+        </h1>
+        <p class="font-body text-lg text-on-surface-variant max-w-xl">
+          Global Spedition and supply chain solutions tailored to your precision needs. We orchestrate trade from Winnenden to the world.
+        </p>
+      </div>
+      <div class="hidden lg:block lg:col-span-5 relative">
+        <div class="absolute -top-24 -right-12 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+        <img class="w-full aspect-square object-cover rounded-xl shadow-2xl relative z-10 grayscale-[30%] contrast-110" data-alt="Modern high-tech logistics center with cargo planes and shipping containers under dramatic blue hour lighting, professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgJRM9QwnWZj4D_1i9D9hHrVcsd5RbyKOjCwwkAaZIP7mVY7MFjFquCi4d98he_8u4hc-iaZw-4Cbo4B7oEO_4DYFo15owKqmxZhY1aiy1Ax-ZmBUU8tjV0P2G0Fsofdm5-c9AL2rjpPQy-ix3jX4L69VhtLtcSU6mlViYdEGKeGT1RgnawtKbepzL8DXwqAijIVQbkPcdP3Ubak2HPNKr_Y0Iwnw7pSUuN8HtSLa9JqEz-tfJ9sG3DE-qaf4bP08PEzWp0Rk43eli"/>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Content Grid -->
+  <section class="px-8 md:px-16 lg:px-24 py-24 bg-surface max-w-screen-2xl mx-auto">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+      <!-- Contact Form Side -->
+      <div class="lg:col-span-7">
+        <div class="bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)]">
+          <div class="mb-8">
+            <span class="label-md uppercase tracking-[0.1em] text-on-surface-variant font-semibold">Direct Inquiry</span>
+            <h2 class="font-headline text-3xl font-bold mt-2">Send a Message</h2>
+          </div>
+          <form action="https://formspree.io/f/mock_endpoint" method="POST" class="space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="space-y-2">
+                <label class="label-md font-bold text-on-surface-variant">Name</label>
+                <input class="w-full bg-surface-container-highest px-0 py-4 focus:ring-0 border-0 border-b-2 border-transparent focus:border-primary transition-all font-body text-on-surface" placeholder="Your full name" type="text" name="name" required />
+              </div>
+              <div class="space-y-2">
+                <label class="label-md font-bold text-on-surface-variant">Email</label>
+                <input class="w-full bg-surface-container-highest px-0 py-4 focus:ring-0 border-0 border-b-2 border-transparent focus:border-primary transition-all font-body text-on-surface" placeholder="email@address.com" type="email" name="email" required />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <label class="label-md font-bold text-on-surface-variant">Subject</label>
+              <input class="w-full bg-surface-container-highest px-0 py-4 focus:ring-0 border-0 border-b-2 border-transparent focus:border-primary transition-all font-body text-on-surface" placeholder="How can we help?" type="text" name="subject"/>
+            </div>
+            <div class="space-y-2">
+              <label class="label-md font-bold text-on-surface-variant">Message</label>
+              <textarea class="w-full bg-surface-container-highest px-0 py-4 focus:ring-0 border-0 border-b-2 border-transparent focus:border-primary transition-all font-body text-on-surface resize-none" placeholder="Details of your request..." rows="5" name="message" required></textarea>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6 pt-4">
+              <p class="text-xs text-on-surface-variant italic">
+                Your inquiry will be sent directly to <span class="text-primary font-semibold">jp@odidika.de</span>
+              </p>
+              <button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-10 py-4 rounded-lg font-headline font-bold text-base shadow-sm hover:opacity-90 active:scale-95 transition-all" type="submit">
+                Submit Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Details & Map Side -->
+      <div class="lg:col-span-5 space-y-12">
+        <!-- Business Details -->
+        <div class="space-y-10">
+          <div>
+            <h3 class="label-md uppercase tracking-[0.1em] text-on-surface-variant font-bold mb-6">Our Headquarters</h3>
+            <div class="flex items-start gap-4">
+              <div class="bg-secondary-container p-3 rounded-lg text-on-secondary-container">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div>
+                <p class="font-headline text-xl font-bold text-primary">Global Trade Hub</p>
+                <p class="font-body text-on-surface-variant mt-1 leading-relaxed">
+                  Douglasienweg 1<br/>71364 Winnenden<br/>Germany
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="bg-secondary-container p-3 rounded-lg text-on-secondary-container">
+              <span class="material-symbols-outlined">alternate_email</span>
+            </div>
+            <div>
+              <p class="font-headline text-xl font-bold text-primary">Direct Communication</p>
+              <a class="font-body text-on-surface-variant mt-1 hover:text-primary transition-colors block" href="mailto:jp@odidika.de">
+                jp@odidika.de
+              </a>
+              <p class="text-xs text-on-surface-variant mt-1">24/7 Logistics Monitoring</p>
+            </div>
+          </div>
+        </div>
+        <!-- Visual Map Placeholder -->
+        <div class="relative overflow-hidden rounded-xl h-80 group">
+          <img class="w-full h-full object-cover grayscale transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist dark map interface showing Winnenden, Germany with a glowing logistics hub point, professional UI style" data-location="Winnenden" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvMul1A4d7RQGWcxrErly3kmHJ0O--kRoqtgYDxHyS4ITaGbVwPYHIhkK1ctKuvIhR8g5A7XMZW53WKx9LDtgi0WNE02P_3v3DNlnM0_X5g8MqPBLDL_JnDCph9csElu9efkEdHMGpAWdAQHT_uqpKWkphNiu55czxcML-Mx9xF9wpvxfdSvZPhAfseeeuT01yptkQ6-dzTsklmDvTdmUAdKmjKqdltQq3awT7GvDqseqFTCxpVOju8C6auFaop3RPRX26ezfxdvro"/>
+          <div class="absolute inset-0 bg-primary/20 mix-blend-overlay"></div>
+          <div class="absolute bottom-4 left-4 bg-inverse-surface/90 backdrop-blur-md px-4 py-2 rounded-lg text-inverse-on-surface text-xs font-bold uppercase tracking-wider">
+            EMEA Command Center
+          </div>
+        </div>
+        <!-- Additional Context Bento -->
+        <div class="bg-surface-container p-6 rounded-xl space-y-4">
+          <p class="font-headline font-bold text-primary">Global Reach</p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-surface-container-lowest p-4 rounded-lg">
+              <span class="label-md block font-bold text-primary">Europe</span>
+              <span class="text-xs text-on-surface-variant">Overnight Spedition</span>
+            </div>
+            <div class="bg-surface-container-lowest p-4 rounded-lg">
+              <span class="label-md block font-bold text-primary">Overseas</span>
+              <span class="text-xs text-on-surface-variant">Port-to-Door Sync</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

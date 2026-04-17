@@ -1,0 +1,106 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Imprint">
+  <div class="pt-32 pb-24 px-6 md:px-12 lg:px-24 max-w-screen-xl mx-auto">
+    <!-- Hero Section Asymmetry -->
+    <header class="mb-20">
+      <span class="label-md text-on-surface-variant tracking-[0.2em] uppercase text-xs mb-4 block">Legal Disclosure</span>
+      <h1 class="font-headline font-extrabold text-5xl md:text-7xl text-primary leading-[0.9] tracking-tighter max-w-3xl">
+        Imprint / <br/><span class="text-on-primary-container">Impressum</span>
+      </h1>
+    </header>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <!-- Left Side: Core Info -->
+      <div class="lg:col-span-7 space-y-16">
+        <!-- Entity Identification -->
+        <section class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+          <h2 class="font-headline font-bold text-2xl text-primary mb-8">Provider Information</h2>
+          <div class="space-y-6">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Company Name</p>
+              <p class="text-xl font-medium text-on-surface">Joodi Logistics and Spedition</p>
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-1">Legal Representative</p>
+              <p class="text-xl font-medium text-on-surface">John-Paul Odidika (CEO)</p>
+            </div>
+          </div>
+        </section>
+        <!-- Contact & Location -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+              <h3 class="font-headline font-bold text-lg">Address</h3>
+            </div>
+            <p class="text-on-surface-variant leading-relaxed">
+              Douglasienweg 1<br/>
+              71364 Winnenden<br/>
+              Germany
+            </p>
+          </div>
+          <div class="bg-surface-container-low p-8 rounded-xl">
+            <div class="flex items-center gap-3 mb-6">
+              <span class="material-symbols-outlined text-primary" data-icon="alternate_email">alternate_email</span>
+              <h3 class="font-headline font-bold text-lg">Contact</h3>
+            </div>
+            <p class="text-on-surface-variant mb-1 italic">Direct inquiries to:</p>
+            <a class="text-primary font-semibold hover:underline" href="mailto:jp@odidika.de">jp@odidika.de</a>
+          </div>
+        </section>
+        <!-- Editorial Legal Content -->
+        <section class="prose prose-slate max-w-none space-y-8 text-on-surface-variant">
+          <div>
+            <h3 class="font-headline font-bold text-xl text-primary mb-4">Dispute Resolution</h3>
+            <p class="leading-relaxed">
+              The European Commission provides a platform for online dispute resolution (OS), which you can find here: <a class="text-primary-container font-medium hover:underline" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>. We are neither obligated nor willing to participate in dispute resolution proceedings before a consumer arbitration board.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-primary mb-4">Liability for Content</h3>
+            <p class="leading-relaxed">
+              As a service provider, we are responsible for our own content on these pages in accordance with general laws according to § 7 Para.1 TMG. According to §§ 8 to 10 TMG, however, we as service providers are not obligated to monitor transmitted or stored third-party information or to investigate circumstances that indicate illegal activity.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-xl text-primary mb-4">Copyright</h3>
+            <p class="leading-relaxed">
+              The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation outside the limits of copyright law require the written consent of the respective author or creator.
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- Right Side: Visual Anchor & Quick Access -->
+      <aside class="lg:col-span-5 space-y-8">
+        <div class="sticky top-32">
+          <div class="relative overflow-hidden rounded-2xl h-[400px] bg-primary mb-8 group">
+            <img alt="Logistics warehouse" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60 transition-transform duration-700 group-hover:scale-110" data-alt="Modern logistics distribution center with rows of shelves and organized cargo under bright industrial lighting in a blue tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJQX8uWijKz4ZEfhocmA2gvPwX00eaAkNn1Kc6ghTnWQF8fE0MPKxY-l6rcoUwdkoDZAM7cfXelOfmpSRs1WEmvnOLoTMW53UT-qS8U0JT4eZysITz7YaUQk8A5qOriBJoOTChdDP3qWXaaVLNUXicH0AvHJRD7_h8NnXLZ9N36NjniE9ajZzGINc2EOR6ZcgAVb7Rb5a8bRreQQdI4BlZirkcN_GKDRJJ004DO7LZr_mwDo7uegMa64h1X9Vp3ldCoDbc0wJkMOj1"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 to-transparent flex flex-col justify-end p-8">
+              <h4 class="text-white font-headline font-bold text-2xl mb-2">Global Trade Simplified.</h4>
+              <p class="text-blue-200/80 text-sm">Managing your global supply chain with German precision and international reach.</p>
+            </div>
+          </div>
+          <div class="bg-surface-container-highest p-8 rounded-xl border-l-4 border-tertiary-fixed-dim">
+            <h4 class="font-headline font-bold text-primary mb-4">Registry Information</h4>
+            <ul class="space-y-4 text-sm text-on-surface-variant">
+              <li class="flex justify-between border-b border-outline-variant/20 pb-2">
+                <span class="font-medium">Register Court</span>
+                <span>Amtsgericht Stuttgart</span>
+              </li>
+              <li class="flex justify-between border-b border-outline-variant/20 pb-2">
+                <span class="font-medium">Company ID</span>
+                <span>Pending</span>
+              </li>
+              <li class="flex justify-between">
+                <span class="font-medium">Tax ID</span>
+                <span>Pending</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</Layout>

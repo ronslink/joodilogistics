@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eceef1",
+                    "on-secondary-container": "#556474",
+                    "secondary": "#50606f",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-error": "#ffffff",
+                    "tertiary": "#240f00",
+                    "surface-tint": "#435b9f",
+                    "outline-variant": "#c5c6d2",
+                    "on-surface": "#191c1e",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#d4e4f6",
+                    "tertiary-fixed": "#ffdcc3",
+                    "surface": "#f7f9fc",
+                    "on-tertiary-fixed": "#2f1500",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#00174a",
+                    "primary": "#00113a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#d97600",
+                    "on-surface-variant": "#444650",
+                    "on-secondary-fixed-variant": "#394857",
+                    "surface-container-low": "#f2f4f7",
+                    "inverse-primary": "#b3c5ff",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#d1e1f4",
+                    "inverse-surface": "#2d3133",
+                    "surface-dim": "#d8dadd",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "primary-container": "#002366",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "surface-container-high": "#e6e8eb",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dbe1ff",
+                    "tertiary-container": "#422000",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#758dd5",
+                    "outline": "#757682",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f7f9fc",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .bg-glass {
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-white">GlobalTrade</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-blue-900 dark:text-white border-b-2 border-blue-900 dark:border-white pb-1" href="#">About</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 py-2.5 rounded-lg font-manrope font-bold text-sm active:scale-95 duration-200 transition-all">
+                Track Shipment
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex items-center overflow-hidden bg-surface">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="Wide angle shot of a high-tech automated logistics warehouse with soft blue lighting and motion-blurred robotic arms" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-HEVIMCoTA66zNwNqKiaLFQ4v5wobL429QwTCU6J0UEl7iBLbBfXCR5VTdIyryL3Ptrg6WcbcEyJ6YvjQvNvSLScVQEgNpwS4U7XUfAZma9nKCrvWnShTggN1w9uVH2GNPYziGyJQ7U8p1_ec6PgM67Hel7N45ksjStHbQZN-K4KR8w-tQU-7Ir1UyTwsZ43iL5fRF_w9O9SRHeSTgZWJBddi24MMQN_NPDRmjkKbN0yDSkY0BMJvltOvmsKRH_3fNmBmW9F2oBMB"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 w-full z-10 py-24">
+<div class="max-w-4xl">
+<span class="label-md uppercase tracking-[0.2em] text-on-surface-variant font-semibold mb-4 block">Precision Velocity</span>
+<h1 class="font-headline font-extrabold text-[4.5rem] leading-[0.95] tracking-tighter text-primary mb-8">
+                        The Architecture of <br/>
+<span class="text-tertiary-fixed-dim">Global Trade.</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        Joodi Logistics isn't just a carrier; we are the unseen infrastructure of the world's most sophisticated supply chains.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Our Story: Asymmetric Editorial Layout -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="editorial-grid gap-12 items-center">
+<div class="col-span-12 lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Close up of a premium logistics tracking screen showing global flight paths on a clean dark interface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLpkCeh9iRpfAzFQR0gmggCCKMxLJ9Q7OzW1LMtyjF8y4maI3yQhYq5a7_uHaQmQWFz2IPaWB3iNt17Rbt9Y8iNR-leoEoDvPjEFb_lL21D0_jhdZS7nGpWtOFpHZIdNafvY0yI2U8rQzfwLN82LBcKnB3LxJOky1vZt1CeuwUQ9MFxzCKCf8boOpmMzp8X3zUlyOiqimiVpxvx_z8371lkt9DjY6ChT3Qo4d0fA4q0rwXn0PQtTlEzAvy0WitnvQGQwZnWBC_rKcB"/>
+</div>
+<div class="absolute -bottom-8 -right-8 w-64 p-8 bg-primary text-on-primary rounded-xl hidden lg:block">
+<span class="font-headline text-4xl font-bold">15+</span>
+<p class="text-xs uppercase tracking-widest mt-2 opacity-80">Years of Precision</p>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 lg:col-start-7">
+<h2 class="font-headline text-3xl font-extrabold text-primary mb-6">Our Journey</h2>
+<div class="space-y-6 text-on-surface-variant leading-relaxed font-body">
+<p>Founded on the principle of absolute reliability, Joodi Logistics emerged from a need for greater transparency in trans-continental trade. We started with a single hub and a radical idea: that data is as valuable as the cargo it tracks.</p>
+<p>Today, we orchestrate thousands of movements daily, leveraging proprietary AI to anticipate disruptions before they happen. Our story is one of relentless innovation and the unwavering pursuit of velocity.</p>
+</div>
+<div class="mt-12 grid grid-cols-2 gap-8">
+<div>
+<div class="text-primary font-headline text-lg font-bold mb-1">Our Mission</div>
+<p class="text-sm text-on-surface-variant">To eliminate boundaries through high-fidelity logistics and real-time operational intelligence.</p>
+</div>
+<div>
+<div class="text-primary font-headline text-lg font-bold mb-1">Our Vision</div>
+<p class="text-sm text-on-surface-variant">To be the central nervous system of global commerce, where every shipment is a promise kept.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Reach: Map & Bento Grid -->
+<section class="py-32 bg-white">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Our Global Reach</h2>
+<p class="text-on-surface-variant">Strategically positioned hubs across six continents, ensuring your assets are never more than a few hours from their next milestone.</p>
+</div>
+<button class="bg-surface-container-highest text-primary px-8 py-4 font-headline font-bold text-sm tracking-wide rounded-lg flex items-center gap-3">
+                        View Network Map
+                        <span class="material-symbols-outlined text-lg">public</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 grid-rows-2 gap-6 min-h-[600px]">
+<div class="md:col-span-2 md:row-span-2 bg-inverse-surface rounded-2xl overflow-hidden relative group">
+<div class="absolute inset-0 opacity-40 group-hover:opacity-60 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="A stylized dark world map showing illuminated global flight paths and shipping routes" data-location="Global" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzIgIwoZXwIjw15ANsu5fYacS_OntKYEn0GQikZoCYJGTKbrr-hvARQxTxmult9n6jpp0gqb_wwZioBRtSuEj5P8U86OZZOEMW8xKJsBvfgpEjtuBEBIKhrUlN2pHaBmcQZUwHuWeFnN562eQfXRbjbUJlNmNTH6kTWDsnn4Ha3u9yRx3lAcM1adpL81zmA2vl6azVJldZpZPjONbS-fX4JQ-wcVDL9ZYnCX9wFZTon-Sev3e6rCdm0IiM9B5b-J3wRr_w2OeCUPDw"/>
+</div>
+<div class="absolute bottom-10 left-10 text-white z-10">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest mb-4 inline-block">Real-time status</span>
+<h3 class="text-3xl font-headline font-bold">The Nerve Center</h3>
+</div>
+</div>
+<div class="md:col-span-1 bg-surface-container rounded-2xl p-8 flex flex-col justify-between border-b-4 border-tertiary-fixed-dim">
+<span class="material-symbols-outlined text-primary text-4xl">flight_takeoff</span>
+<div>
+<div class="text-3xl font-headline font-black text-primary">240+</div>
+<div class="text-xs uppercase tracking-widest font-bold text-on-surface-variant">Direct Air Routes</div>
+</div>
+</div>
+<div class="md:col-span-1 bg-primary text-on-primary rounded-2xl p-8 flex flex-col justify-between">
+<span class="material-symbols-outlined text-on-primary-container text-4xl">directions_boat</span>
+<div>
+<div class="text-3xl font-headline font-black">18</div>
+<div class="text-xs uppercase tracking-widest font-bold opacity-70">Major Port Hubs</div>
+</div>
+</div>
+<div class="md:col-span-2 bg-surface-container-low rounded-2xl p-10 flex items-center gap-12 overflow-hidden">
+<div class="flex-1">
+<h4 class="text-xl font-headline font-bold text-primary mb-2">Precision Logistics</h4>
+<p class="text-sm text-on-surface-variant leading-relaxed">Our local expertise ensures last-mile delivery success even in the most challenging terrains.</p>
+</div>
+<div class="w-48 h-48 flex-shrink-0 bg-white rounded-xl shadow-sm rotate-6 translate-x-12 translate-y-6">
+<img class="w-full h-full object-cover" data-alt="Close up of a logistics professional checking an inventory list on a tablet in a bright warehouse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU_yfUcA59SeAazVrGZoiDGdVYIeqKRMQFtM7dzK7xu89E97MlShJCHGV4CXnkYdbx0kabNbVPi17XesP5JagzwY2FeoNnOvtf5R2lOIH_0wWLssiYxFyk46IZ6e__FLuqq1bEgGmk6NCX-3mzpO9VE8F0nUbBCeB3JPzfk6trsGntpEknSnnCAG_0943HaMPKfeBDJQvSPCvFQL9L7SLi7rBj83GVokxOdXH4o_VIeqRrv8x79KeWZNOozsk7gN0TjJ3GxlooXpV0"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Values Section -->
+<section class="py-24 bg-surface-container-highest">
+<div class="max-w-7xl mx-auto px-8 text-center mb-20">
+<h2 class="font-headline text-4xl font-extrabold text-primary">Rooted in Integrity</h2>
+</div>
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-surface-container-lowest p-10 rounded-xl">
+<div class="w-12 h-12 bg-secondary-container text-on-secondary-container flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Total Accountability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Every touchpoint is documented. We take full ownership of the assets entrusted to us, from pickup to final delivery.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl shadow-sm">
+<div class="w-12 h-12 bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined">speed</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Hyper-Efficiency</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">We don't just move faster; we move smarter. AI-driven routing ensures minimal idle time and maximum velocity.</p>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-xl">
+<div class="w-12 h-12 bg-primary-fixed text-on-primary-fixed flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<h3 class="font-headline text-xl font-bold text-primary mb-4">Sustainability</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Building the future of logistics means respecting the planet. We are committed to net-zero carbon operations by 2035.</p>
+</div>
+</div>
+</section>
+<!-- Leadership Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-16">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-extrabold text-primary mb-6">The Architects</h2>
+<p class="text-on-surface-variant leading-relaxed">Meet the minds behind the world's most resilient logistics network.</p>
+<div class="mt-8">
+<a class="text-primary font-bold inline-flex items-center gap-2 group" href="#">
+                                View Open Careers
+                                <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-xl mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a male executive in a tailored suit, modern corporate office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBomaXpd3sz8tPXGFDPqgDwoDP7wpyzfiKvB2JelX7uj89XASNk-8T9a7huPTWgXdS8SL7MlmD3QMbX2p3JwIv0dzlL8hhoXh4OledyZa2PksGyIGmchGldlVwakGl8pUEQ7KK3NfSI4cAVJFQOK4SwSizogiD7vdXd8N_hnGlnuWFHIPcTXK1vgzwutdWkqnXMV1VSuXp09c1SHYa-DKqizTeatKetY8PmNB_3I2oyD_WNstURAJ4W_-fFsNSP-ztppD81CyQ3lFh0"/>
+</div>
+<h4 class="text-xl font-headline font-bold text-primary">Julian Thorne</h4>
+<p class="text-xs uppercase tracking-widest font-bold text-tertiary-fixed-dim mt-1">Chief Executive Officer</p>
+</div>
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container overflow-hidden rounded-xl mb-6 grayscale hover:grayscale-0 transition-all duration-500">
+<img class="w-full h-full object-cover" data-alt="Professional portrait of a female executive with a confident expression, architectural office setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-wG731HtBNXuCqQdl88XN662HyE7SieayIXDU7aDhCy62J4Oj3dvx-VG390dg3taG9CqmD_xs4jXil_swvwUSFoFhB-lG6Gc4ABu4iNcVX0_G1fWNvYLtgf3Myqi45t652aqfLlycRM9Cn0CrmBhUByXlZXp1BGamA3sXGMuNs2mgw5RBMFfq9cL1nY3t5JMPZ1eAqgh0kasxjDJUNSQX3yBtI-nATVO0kSsume92n6g5gYAEpo-llIxtMA5MhdbKJDetoNk-KptH"/>
+</div>
+<h4 class="text-xl font-headline font-bold text-primary">Elena Rodriguez</h4>
+<p class="text-xs uppercase tracking-widest font-bold text-tertiary-fixed-dim mt-1">Head of Global Operations</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary text-on-primary">
+<div class="max-w-5xl mx-auto px-8 text-center">
+<h2 class="font-headline text-4xl font-extrabold mb-8">Ready to orchestrate your global operations?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-10 py-4 rounded-lg font-headline font-bold hover:brightness-110 transition-all">
+                        Schedule a Consultation
+                    </button>
+<button class="bg-transparent border border-on-primary/20 hover:bg-on-primary/10 px-10 py-4 rounded-lg font-headline font-bold transition-all">
+                        Contact Sales
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="flex flex-col justify-between">
+<div>
+<div class="text-lg font-black text-blue-900 dark:text-white mb-4">GlobalTrade</div>
+<p class="text-on-surface-variant max-w-xs text-sm leading-relaxed">The premier choice for complex logistics solutions, delivering precision and velocity across the globe.</p>
+</div>
+<div class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 mt-8">
+                    © 2024 GlobalTrade Logistics. Precision Velocity.
+                </div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col space-y-3">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Imprint</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col space-y-3">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Global Network</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

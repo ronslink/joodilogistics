@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eceef1",
+                        "on-secondary-container": "#556474",
+                        "secondary": "#50606f",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-error": "#ffffff",
+                        "tertiary": "#240f00",
+                        "surface-tint": "#435b9f",
+                        "outline-variant": "#c5c6d2",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f4",
+                        "secondary-fixed": "#d4e4f6",
+                        "tertiary-fixed": "#ffdcc3",
+                        "surface": "#f7f9fc",
+                        "on-tertiary-fixed": "#2f1500",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#00174a",
+                        "primary": "#00113a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#d97600",
+                        "on-surface-variant": "#444650",
+                        "on-secondary-fixed-variant": "#394857",
+                        "surface-container-low": "#f2f4f7",
+                        "inverse-primary": "#b3c5ff",
+                        "on-background": "#191c1e",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "surface-variant": "#e0e3e6",
+                        "secondary-container": "#d1e1f4",
+                        "inverse-surface": "#2d3133",
+                        "surface-dim": "#d8dadd",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "surface-container-high": "#e6e8eb",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-container": "#422000",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#758dd5",
+                        "outline": "#757682",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f7f9fc",
+                        "background": "#f7f9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Shell -->
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-white">GlobalTrade</div>
+<div class="hidden md:flex space-x-10 items-center">
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">About</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-blue-900 dark:text-white border-b-2 border-blue-900 dark:border-white pb-1" href="#">Contact</a>
+<button class="bg-primary hover:bg-primary-container text-white px-6 py-2.5 rounded-lg font-bold text-sm transition-all active:scale-95 duration-200 shadow-sm">Track Shipment</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-primary text-3xl">menu</span>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="relative min-h-screen">
+<!-- Editorial Hero Section -->
+<section class="pt-20 pb-32 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="relative grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<div class="lg:col-span-7">
+<span class="text-label-md text-on-surface-variant uppercase tracking-[0.2em] font-semibold block mb-4">Precision Connectivity</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-primary leading-[1.1] mb-8 tracking-tighter">
+                        Global Reach. <br/>
+<span class="text-on-primary-container">Local Presence.</span>
+</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        At Joodi Logistics, we bridge the gap between departure and arrival with surgical precision. Our German headquarters orchestrates a network built on reliability. Reach out to our specialist teams today.
+                    </p>
+</div>
+<!-- Floating Detail Card -->
+<div class="lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="bg-primary-container p-12 rounded-xl text-white shadow-2xl relative z-10 overflow-hidden">
+<div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
+<h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">hub</span>
+                            The Contact Point
+                        </h2>
+<div class="space-y-8">
+<div>
+<p class="text-sm uppercase tracking-widest text-primary-fixed opacity-60 mb-2">Primary Inquiry</p>
+<p class="text-2xl font-bold text-tertiary-fixed-dim select-all">jp@odidika.de</p>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim mt-1">call</span>
+<div>
+<p class="text-sm uppercase tracking-widest text-primary-fixed opacity-60 mb-1">Direct Line</p>
+<p class="text-lg font-semibold">+49 (0) 40 123 456 78</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary-fixed-dim mt-1">location_on</span>
+<div>
+<p class="text-sm uppercase tracking-widest text-primary-fixed opacity-60 mb-1">Operations Hub</p>
+<p class="text-lg font-semibold">HafenCity District, 20457<br/>Hamburg, Germany</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-full h-full bg-surface-container-high rounded-xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Form & Map Section (Bento Layout) -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
+<!-- Contact Form Card -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm">
+<h3 class="text-2xl font-bold text-primary mb-2">Send a Message</h3>
+<p class="text-on-surface-variant mb-10">Our dispatchers monitor inquiries 24/7. Expect a response within 4 operational hours.</p>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-highest p-4 rounded-lg focus:ring-0 focus:border-primary border-b-2 border-transparent transition-all outline-none" placeholder="Johnathan Doe" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-highest p-4 rounded-lg focus:ring-0 focus:border-primary border-b-2 border-transparent transition-all outline-none" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Subject</label>
+<input class="w-full bg-surface-container-highest p-4 rounded-lg focus:ring-0 focus:border-primary border-b-2 border-transparent transition-all outline-none" placeholder="Shipment Tracking #DE-402" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="text-xs font-bold uppercase tracking-wider text-on-surface-variant ml-1">Message</label>
+<textarea class="w-full bg-surface-container-highest p-4 rounded-lg focus:ring-0 focus:border-primary border-b-2 border-transparent transition-all outline-none resize-none" placeholder="How can our logistics network support your growth?" rows="5"></textarea>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-container text-white px-10 py-4 rounded-lg font-bold tracking-wide hover:shadow-lg transition-all active:scale-95 flex items-center justify-center gap-3" type="submit">
+                            Transmit Message
+                            <span class="material-symbols-outlined text-sm">send</span>
+</button>
+</form>
+</div>
+<!-- Map & Visuals -->
+<div class="lg:col-span-5 grid grid-rows-2 gap-8">
+<!-- Map Placeholder -->
+<div class="bg-surface-container-high rounded-xl overflow-hidden relative shadow-sm h-full min-h-[300px]">
+<img class="w-full h-full object-cover filter saturate-50 contrast-125" data-alt="Modern high-detail satellite style map of Hamburg Germany harbor area with dark blue and slate tones" data-location="Hamburg, Germany" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDZF9lIA60eK6GrtB1SvUazQ0Y0zZpkH_9IY2xfbgg6-cth8OV0ES64RgNVjVu5f6QwywGiVFS8Mok6hZQEW7TJAnFTkgwCoyo8PwQxTVFrPTLbA7SL6qW25sPuxLY4kOVMBe2xMJPwZAXAq1qK7nyP9koB4udK7pQxf83NWJoHQa-w2Jz8W9JnkxffeWziq8HBjDsUzVpr6Ku_g8RCPKLWN8w8QvE4ZZe0vVvGkQeF9q8JhKRywT93HTnQ8cHG_HXjbxJC2CaSMkW"/>
+<div class="absolute inset-0 bg-primary/20 backdrop-grayscale-[0.5]"></div>
+<div class="absolute bottom-6 left-6 bg-white p-4 rounded shadow-xl flex items-center gap-3">
+<div class="w-3 h-3 bg-tertiary-fixed-dim rounded-full animate-pulse"></div>
+<span class="text-xs font-bold uppercase tracking-widest text-primary">Live Operations Hub</span>
+</div>
+</div>
+<!-- Decorative Brand Image -->
+<div class="bg-primary rounded-xl overflow-hidden shadow-sm h-full relative">
+<img class="w-full h-full object-cover opacity-50" data-alt="Interior of a modern high-tech logistics center with glowing blue lights and organized steel shipping containers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLvNIxdwAlaiD3xxUJLlnBhKJ9t8krFIpWw5owji2szbqK6pZ0nfA4oGL3HwVbP2UI8kQazLnm5CDPcZFuwj5zocrjr8EXQj7zF1f399ujuVoWfIEvAw10St-Q9SzAgCc81ayuH_scSn3smeRVLfLUPxQq1LoWLSmdOpe8r-0CqATcyWgtSH5gq3DQozZjLWOHz1se_fiVhnqLekYpsJJJHmmIYgoIafZSeoM9W4cNQHQskQSShPfUn0gmzdmqrcpBGwodS2vkEau_"/>
+<div class="absolute inset-0 p-8 flex flex-col justify-end">
+<h4 class="text-white text-xl font-bold mb-2">Sustainable Velocity</h4>
+<p class="text-primary-fixed opacity-80 text-sm leading-relaxed">Pioneering carbon-neutral logistics across the European corridor since 2024.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Global Network Ticker (Subtle) -->
+<section class="py-12 bg-surface overflow-hidden whitespace-nowrap">
+<div class="flex gap-20 opacity-30 select-none">
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Hamburg</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Berlin</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Frankfurt</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Munich</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Stuttgart</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Dusseldorf</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Hamburg</span>
+<span class="text-3xl font-black text-on-surface-variant uppercase italic">Berlin</span>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="space-y-4">
+<div class="text-lg font-black text-blue-900 dark:text-white">GlobalTrade</div>
+<p class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400">© 2024 GlobalTrade Logistics. Precision Velocity.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Imprint</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 dark:hover:text-orange-300 transition-colors" href="#">Global Network</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "background": "#f7f9fc",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#422000",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "tertiary-fixed": "#ffdcc3",
+                    "surface-bright": "#f7f9fc",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "inverse-surface": "#2d3133",
+                    "on-primary-container": "#758dd5",
+                    "surface": "#f7f9fc",
+                    "error": "#ba1a1a",
+                    "primary": "#00113a",
+                    "on-secondary-fixed-variant": "#394857",
+                    "tertiary": "#240f00",
+                    "on-surface": "#191c1e",
+                    "surface-container-low": "#f2f4f7",
+                    "surface-container-high": "#e6e8eb",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "secondary": "#50606f",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "inverse-on-surface": "#eff1f4",
+                    "outline": "#757682",
+                    "on-surface-variant": "#444650",
+                    "on-tertiary": "#ffffff",
+                    "surface-container": "#eceef1",
+                    "secondary-container": "#d1e1f4",
+                    "on-primary-fixed": "#00174a",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "on-tertiary-container": "#d97600",
+                    "secondary-fixed": "#d4e4f6",
+                    "on-error": "#ffffff",
+                    "on-background": "#191c1e",
+                    "surface-container-highest": "#e0e3e6",
+                    "outline-variant": "#c5c6d2",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "inverse-primary": "#b3c5ff",
+                    "surface-variant": "#e0e3e6",
+                    "on-secondary-container": "#556474",
+                    "on-secondary": "#ffffff",
+                    "primary-fixed": "#dbe1ff",
+                    "surface-dim": "#d8dadd",
+                    "surface-tint": "#435b9f",
+                    "on-tertiary-fixed": "#2f1500",
+                    "primary-container": "#002366"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(247, 249, 252, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #00113a 0%, #002366 100%);
+      }
+      .editorial-text {
+        letter-spacing: -0.02em;
+      }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav">
+<div class="flex justify-between items-center px-8 py-4 max-w-full">
+<div class="text-2xl font-bold tracking-tight text-blue-950 dark:text-blue-50 font-headline">
+                Joodi International
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-blue-900 dark:text-blue-400 font-bold border-b-2 border-blue-900 dark:border-blue-400 pb-1 font-label" href="#">Home</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-2 rounded-md font-bold text-sm hover:scale-95 duration-150">
+                    Track Now
+                </button>
+</div>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden bg-surface">
+<div class="container mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="text-tertiary font-label font-bold tracking-widest uppercase mb-4 block">Global Authority in Logistics</span>
+<h1 class="font-headline text-[3.5rem] leading-none font-extrabold text-primary editorial-text mb-6">
+                        Joodi International: <br/>Reliable &amp; Safe Logistics
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        Orchestrating Global Trade with Precision Velocity. Experience a high-end logistics partner that balances technical excellence with authoritative reliability.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="primary-gradient text-on-primary px-8 py-4 rounded-md font-bold shadow-xl flex items-center gap-2 group transition-all">
+                            Request Information
+                            <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</button>
+<button class="bg-surface-container-highest text-primary px-8 py-4 rounded-md font-bold hover:bg-surface-container-high transition-colors">
+                            Contact Us
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-square rounded-full overflow-hidden shadow-2xl relative">
+<img alt="Logistics Hub" class="w-full h-full object-cover" data-alt="High-angle wide shot of a modern cargo port at dusk with deep blue water and glowing orange containers under industrial lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALjv8o8Uh7ZfaY8CmlQf1OuqsEZqc6fBJTtIs6vomSyUegmaj2naG9s1-tPD0LcetZhu8x63MYFb7k3FSqma9KBG23kDJNMecN-RbTEiqb1NElSp-SVLxwXTOa-ODHQ2Fw5kQEuVl9WZwTlL3c2JzpGQsbx7M3-rpGWwAddlHzENcIDZteu9RHAl3omEGM4yc0_94PaxWEFJtkK2dn1aCvECJnPp5Z6R6pXRMvnwkw5gnERTBTXA0bwBbmbGv2-FDP7Du4cEpGLVV-"/>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+</div>
+<!-- Floating Data Card -->
+<div class="absolute -bottom-8 -left-8 bg-surface-container-lowest p-6 rounded-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)] max-w-[240px]">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="monitoring">monitoring</span>
+<span class="text-xs font-label uppercase tracking-widest font-bold">Real-time status</span>
+</div>
+<div class="h-2 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim w-3/4"></div>
+</div>
+<p class="text-[10px] text-on-surface-variant mt-2">Active shipments across 140+ countries monitored 24/7.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section - Bento Grid Layout -->
+<section class="py-24 bg-surface-container-low">
+<div class="container mx-auto px-8">
+<div class="mb-16">
+<h2 class="font-headline text-3xl font-bold text-primary mb-4">Core Competencies</h2>
+<p class="text-on-surface-variant font-body max-w-2xl">End-to-end orchestration of global logistics cycles, delivered with surgical precision and strategic insight.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Service 1: Large Feature -->
+<div class="md:col-span-2 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between group hover:bg-primary transition-colors duration-500 overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-on-primary-container group-hover:text-tertiary-fixed-dim mb-6" data-icon="local_shipping">local_shipping</span>
+<h3 class="text-2xl font-bold text-primary group-hover:text-white mb-4">Transport Management</h3>
+<p class="text-on-surface-variant group-hover:text-blue-100 max-w-md">Seamless coordination of air, sea, and land assets to ensure your cargo moves through the global network without friction.</p>
+</div>
+<img class="absolute right-0 bottom-0 w-1/3 opacity-10 group-hover:opacity-20 transition-opacity" data-alt="A detailed blueprint of a logistics network with interconnected lines and points on a clean dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJNzeajk9w28-in-5Pj3h59SGma_pBtasdb4AnvnlFMWxiTf88e4dfr-g70qdfabU-c3ekScke8P52K9UKG5WQRHk-j-Le6-pYvctPsG_U2KSmKZ-XMTBqcCF620Lkx1Dn2nHFt6XltyvhyIwVKnWPdz83MalwPC0xkld65NWvSPFHJrLX0sv3A6WuIJh5EnYaUADlnipclNEPrx2j5m-EgtLrMBzjigkjZPbj3hK7G6eV4rMY6QrkQZr6QIvat6A0aLBPrKAYbyIk"/>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-3xl text-on-primary-container mb-6" data-icon="inventory_2">inventory_2</span>
+<h3 class="text-xl font-bold text-primary mb-2">Goods Distribution</h3>
+<p class="text-sm text-on-surface-variant mb-4">Strategic last-mile delivery and localized warehousing solutions for rapid market penetration.</p>
+<a class="text-primary font-bold text-xs uppercase tracking-wider flex items-center gap-1 group" href="#">
+                            Explore <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform" data-icon="chevron_right">chevron_right</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-3xl text-on-primary-container mb-6" data-icon="language">language</span>
+<h3 class="text-xl font-bold text-primary mb-2">Import &amp; Export</h3>
+<p class="text-sm text-on-surface-variant mb-4">Navigating complex customs regulations and international trade laws with absolute compliance.</p>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-3xl text-on-primary-container mb-6" data-icon="campaign">campaign</span>
+<h3 class="text-xl font-bold text-primary mb-2">Marketing Services</h3>
+<p class="text-sm text-on-surface-variant mb-4">Supporting your brand's growth through integrated logistics-driven promotional distribution.</p>
+</div>
+<!-- Service 5 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-3xl text-on-primary-container mb-6" data-icon="delete_sweep">delete_sweep</span>
+<h3 class="text-xl font-bold text-primary mb-2">Waste Management</h3>
+<p class="text-sm text-on-surface-variant mb-4">Specialized logistics for industrial waste and recycling, adhering to highest environmental standards.</p>
+</div>
+<!-- Service 6 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl hover:shadow-xl transition-all">
+<span class="material-symbols-outlined text-3xl text-on-primary-container mb-6" data-icon="home_storage">home_storage</span>
+<h3 class="text-xl font-bold text-primary mb-2">Relocation Transport</h3>
+<p class="text-sm text-on-surface-variant mb-4">Premium relocation services for corporate entities and high-value domestic assets.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Dynamic Visual Split Section -->
+<section class="py-24 overflow-hidden">
+<div class="container mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-secondary-container/30 rounded-full blur-3xl"></div>
+<img class="rounded-xl shadow-2xl relative z-10" data-alt="Close-up of a high-tech logistics tracking terminal showing global route lines on a dark glass screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcajEutPf0BlYG0F4fnAjAOTcUVffwY2XoAHba_O8RXNRgvvIibM7FsUog74UuzcrFiJygzduJo-eVc0Lq8dGEzblJ-3RWWvk6U0OD-fZoy--SiUaUSIOrdeZLtWefhfUSt2oOeDsiQJcYaMs_KwiAvylPgHCdjBVL7uxsUoeYceSvMKEhUpqVWmw7kc7C78t1kHB0TdsB2Y2aaXlZ5P3yN9K0EX51UFXpqKgERIixZsHbIJTcGaP4D3gr4alJhw7Nkuf8rFGe-kf2"/>
+</div>
+<div>
+<h2 class="font-headline text-3xl font-bold text-primary mb-6">Efficiency Redefined</h2>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed-dim flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary" data-icon="speed">speed</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Precision Velocity</h4>
+<p class="text-sm text-on-surface-variant">We don't just move things; we optimize the entire kinetic chain of your supply operation.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container" data-icon="shield">shield</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Uncompromising Safety</h4>
+<p class="text-sm text-on-surface-variant">Rigorous protocols ensure every shipment, from waste to high-value goods, arrives exactly as intended.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-slate-900 w-full border-t border-slate-200/15 dark:border-slate-800/15">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-12 py-12 w-full gap-8">
+<div class="max-w-xs">
+<div class="text-lg font-bold text-blue-950 dark:text-white mb-4">Joodi International</div>
+<p class="text-slate-500 text-sm mb-4 leading-relaxed">
+                    Douglasienweg 1,<br/>
+                    71364 Winnenden,<br/>
+                    Germany
+                </p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+<span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="mail">mail</span>
+</div>
+</div>
+<div class="flex flex-wrap gap-8 text-slate-500 font-label text-xs uppercase tracking-widest">
+<a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Imprint</a>
+<a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Privacy Policy</a>
+<a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Terms of Service</a>
+<a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Global Network</a>
+</div>
+</div>
+<div class="px-12 py-6 border-t border-slate-200/5 flex justify-center md:justify-start">
+<p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+                © 2024 Joodi International Logistics. All rights reserved.
+            </p>
+</div>
+</footer>
+
+```</body></html>

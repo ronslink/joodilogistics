@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eceef1",
+                    "on-secondary-container": "#556474",
+                    "secondary": "#50606f",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-error": "#ffffff",
+                    "tertiary": "#240f00",
+                    "surface-tint": "#435b9f",
+                    "outline-variant": "#c5c6d2",
+                    "on-surface": "#191c1e",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#d4e4f6",
+                    "tertiary-fixed": "#ffdcc3",
+                    "surface": "#f7f9fc",
+                    "on-tertiary-fixed": "#2f1500",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#00174a",
+                    "primary": "#00113a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#d97600",
+                    "on-surface-variant": "#444650",
+                    "on-secondary-fixed-variant": "#394857",
+                    "surface-container-low": "#f2f4f7",
+                    "inverse-primary": "#b3c5ff",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#d1e1f4",
+                    "inverse-surface": "#2d3133",
+                    "surface-dim": "#d8dadd",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "primary-container": "#002366",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "surface-container-high": "#e6e8eb",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dbe1ff",
+                    "tertiary-container": "#422000",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#758dd5",
+                    "outline": "#757682",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f7f9fc",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-white">GlobalTrade</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Home</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Services</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">About</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 dark:hover:text-blue-200 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary hover:bg-primary-container text-on-primary font-manrope font-bold text-sm px-6 py-3 rounded transition-all active:scale-95 duration-200">
+                Track Shipment
+            </button>
+</div>
+</nav>
+<!-- Main Content Stage -->
+<main class="max-w-7xl mx-auto px-8 py-16 md:py-24">
+<!-- Hero Section / Editorial Header -->
+<div class="mb-20">
+<span class="font-label text-xs font-medium uppercase tracking-[0.2em] text-on-surface-variant mb-4 block">Information according to § 5 TMG</span>
+<h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-primary leading-none mb-8">
+                Imprint
+            </h1>
+<div class="h-1 w-24 bg-tertiary-fixed-dim"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Company Details Section (Bento Style Layout) -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Legal Entity Card -->
+<section class="bg-surface-container-lowest p-10 rounded-xl shadow-[0_20px_40px_rgba(25,28,30,0.06)]">
+<h2 class="text-2xl font-bold text-primary mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="corporate_fare">corporate_fare</span>
+                        Provider
+                    </h2>
+<div class="grid md:grid-cols-2 gap-8 text-on-surface-variant">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-2">Company Name</p>
+<p class="text-lg font-semibold text-on-surface mb-6">Joodi Logistics GmbH</p>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-2">Address</p>
+<address class="not-italic leading-relaxed">
+                                Terminalstrasse Mitte 18<br/>
+                                85356 München-Flughafen<br/>
+                                Germany
+                            </address>
+</div>
+<div class="space-y-6">
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-2">Authorized Representative</p>
+<p class="text-on-surface font-medium">Marc Joodi-Bernstein, Managing Director</p>
+</div>
+<div>
+<p class="font-label text-[10px] uppercase tracking-widest text-outline mb-2">Commercial Register</p>
+<p class="text-on-surface">Amtsgericht München, HRB 248901</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-primary">
+<h3 class="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant mb-4">Direct Contact</h3>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 group">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="mail">mail</span>
+<a class="text-primary font-semibold hover:underline" href="mailto:contact@joodi-logistics.com">contact@joodi-logistics.com</a>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl" data-icon="call">call</span>
+<span class="text-on-surface font-medium">+49 (0) 89 975 00</span>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border-l-4 border-tertiary-fixed-dim">
+<h3 class="font-label text-[10px] uppercase tracking-[0.15em] text-on-surface-variant mb-4">Tax Information</h3>
+<ul class="space-y-3">
+<li>
+<p class="text-[10px] text-outline">VAT ID according to § 27 a UStG</p>
+<p class="text-on-surface font-mono font-medium">DE 324 156 789</p>
+</li>
+</ul>
+</div>
+</section>
+<!-- Professional Disclosure -->
+<section class="prose prose-slate max-w-none space-y-8 text-on-surface-variant leading-relaxed">
+<div>
+<h2 class="text-xl font-bold text-primary mb-4">Professional Liability Insurance</h2>
+<p>Specialist transport liability insurance is provided by Allianz Global Corporate &amp; Specialty SE, Königinstraße 28, 80802 München. Territorial scope: Worldwide operations including maritime, air, and land logistics.</p>
+</div>
+<div class="bg-surface p-1 rounded-lg">
+<h2 class="text-xl font-bold text-primary mb-4">Dispute Resolution</h2>
+<p>The European Commission provides a platform for online dispute resolution (OS): <a class="text-primary underline font-medium" href="https://ec.europa.eu/consumers/odr">https://ec.europa.eu/consumers/odr</a>. Our e-mail address can be found above in the imprint.</p>
+<p class="mt-4">We are not willing or obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+</div>
+</section>
+</div>
+<!-- Sidebar / Accents -->
+<aside class="lg:col-span-4 space-y-8">
+<!-- Visual Anchor -->
+<div class="relative overflow-hidden rounded-xl aspect-[3/4] bg-primary">
+<img alt="modern logistics hub" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="dramatic wide angle shot of a clean modern cargo terminal interior with sleek metal surfaces and cool blue cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXkIgGSOoWcOwCSTdPW01EgwK-yxhPY0gVh4KV1aCwVKr3ELJA52vjYhEU_74NwpKKeOOU_91VbX_XvTum7F1Uck0Bs9456UMcVOuUROhDkEjULNg5ZBun-IqzuWgtawmAzqRIN7_jVPeWajIdPOPwOhvc-anXeeHmJNwlMEXSJ8h_zQTv20DQ80Ny1ub0XRrS5x6sZ0lDD-XlXr2KoVvv-weJOTp7ZlG7MCJZO8q4tMshwYJSja4uFDElcfLlSmngnfPfXHQFKFJZ"/>
+<div class="absolute bottom-8 left-8 right-8">
+<p class="font-headline text-3xl font-black text-white leading-none mb-2">Precision<br/>Velocity.</p>
+<p class="text-white/70 text-sm">Orchestrating global trade through editorial precision.</p>
+</div>
+</div>
+<div class="bg-surface-container p-8 rounded-xl">
+<h3 class="font-bold text-primary mb-4">Responsible for Editorial Content</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed">
+                        In accordance with § 18 MStV:<br/>
+<strong>Marc Joodi-Bernstein</strong><br/>
+                        Terminalstrasse Mitte 18<br/>
+                        85356 München-Flughafen
+                    </p>
+</div>
+<div class="flex flex-col gap-4">
+<button class="flex items-center justify-between p-4 bg-surface-container-highest rounded hover:bg-outline-variant transition-all text-sm font-bold text-primary group">
+                        Download Corporate Profile (PDF)
+                        <span class="material-symbols-outlined group-hover:translate-y-1 transition-transform" data-icon="download">download</span>
+</button>
+<button class="flex items-center justify-between p-4 bg-surface-container-highest rounded hover:bg-outline-variant transition-all text-sm font-bold text-primary group">
+                        Terms of Service
+                        <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="space-y-4">
+<div class="text-lg font-black text-blue-900 dark:text-white uppercase tracking-tighter">GlobalTrade</div>
+<p class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400">
+                    © 2024 GlobalTrade Logistics. Precision Velocity.
+                </p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end items-center">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-blue-900 dark:text-white font-bold transition-colors hover:text-orange-500" href="#">Imprint</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Global Network</a>
+</div>
+</div>
+</footer>
+</body></html>

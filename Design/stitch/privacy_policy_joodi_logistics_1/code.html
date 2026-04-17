@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#eceef1",
+                        "on-secondary-container": "#556474",
+                        "secondary": "#50606f",
+                        "surface-container-highest": "#e0e3e6",
+                        "on-error": "#ffffff",
+                        "tertiary": "#240f00",
+                        "surface-tint": "#435b9f",
+                        "outline-variant": "#c5c6d2",
+                        "on-surface": "#191c1e",
+                        "inverse-on-surface": "#eff1f4",
+                        "secondary-fixed": "#d4e4f6",
+                        "tertiary-fixed": "#ffdcc3",
+                        "surface": "#f7f9fc",
+                        "on-tertiary-fixed": "#2f1500",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#00174a",
+                        "primary": "#00113a",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-container": "#d97600",
+                        "on-surface-variant": "#444650",
+                        "on-secondary-fixed-variant": "#394857",
+                        "surface-container-low": "#f2f4f7",
+                        "inverse-primary": "#b3c5ff",
+                        "on-background": "#191c1e",
+                        "secondary-fixed-dim": "#b8c8da",
+                        "on-secondary-fixed": "#0d1d2a",
+                        "surface-variant": "#e0e3e6",
+                        "secondary-container": "#d1e1f4",
+                        "inverse-surface": "#2d3133",
+                        "surface-dim": "#d8dadd",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-container": "#002366",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "on-tertiary-fixed-variant": "#6e3900",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb77d",
+                        "surface-container-high": "#e6e8eb",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#dbe1ff",
+                        "tertiary-container": "#422000",
+                        "error-container": "#ffdad6",
+                        "on-primary-container": "#758dd5",
+                        "outline": "#757682",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f7f9fc",
+                        "background": "#f7f9fc"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9fc; }
+        .font-manrope { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- TopNavBar Suppression Check: This is a sub-page, but for brand navigation, the shell is retained for UX flow -->
+<header class="sticky top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm dark:shadow-none">
+<nav class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900 dark:text-white font-manrope">GlobalTrade</div>
+<div class="hidden md:flex items-center space-gap-8 gap-8">
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Home</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Services</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">About</a>
+<a class="font-manrope font-bold text-sm tracking-wide text-slate-500 dark:text-slate-400 hover:text-blue-800 transition-colors" href="#">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded shadow-lg font-manrope font-bold text-sm tracking-wide active:scale-95 transition-all">Track Shipment</button>
+</div>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</nav>
+</header>
+<main class="max-w-5xl mx-auto px-8 py-20">
+<!-- Hero Section Asymmetry -->
+<section class="mb-24 relative">
+<div class="absolute -top-10 -left-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+<h1 class="text-6xl font-extrabold font-manrope text-primary leading-tight tracking-tighter mb-6">
+                Datenschutz-<br/><span class="text-tertiary-fixed-dim">erklärung</span>
+</h1>
+<p class="text-lg text-on-surface-variant font-medium max-w-2xl border-l-4 border-primary pl-6">
+                Ihre Privatsphäre ist der Kern unserer Logistik-Präzision. Wir bei Joodi Logistics verpflichten uns zum Schutz Ihrer persönlichen Daten gemäß der DSGVO.
+            </p>
+</section>
+<!-- Content Layout: Editorial Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Sidebar Navigation (Floating) -->
+<aside class="lg:col-span-4 hidden lg:block sticky top-32 h-fit">
+<nav class="space-y-4">
+<div class="text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-6">Inhaltsverzeichnis</div>
+<a class="block py-2 text-primary font-bold border-b-2 border-primary w-fit" href="#overview">1. Überblick</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary transition-colors" href="#collection">2. Datenerfassung</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary transition-colors" href="#cookies">3. Cookies &amp; Analyse</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary transition-colors" href="#rights">4. Ihre Rechte</a>
+<a class="block py-2 text-on-surface-variant hover:text-primary transition-colors" href="#contact">5. Kontakt</a>
+</nav>
+</aside>
+<!-- Main Legal Text -->
+<article class="lg:col-span-8 space-y-16">
+<!-- Section 1 -->
+<section class="bg-surface-container-lowest p-10 rounded-xl shadow-sm" id="overview">
+<h2 class="text-2xl font-extrabold font-manrope text-primary mb-6">1. Allgemeine Hinweise</h2>
+<div class="prose prose-slate max-w-none text-on-surface-variant leading-relaxed">
+<p class="mb-4">Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie unsere Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie persönlich identifiziert werden können.</p>
+<h3 class="font-bold text-on-surface mt-6 mb-2">Verantwortliche Stelle</h3>
+<p>Joodi Logistics GmbH<br/>Logistikstraße 100<br/>20457 Hamburg, Deutschland<br/>E-Mail: privacy@joodi-logistics.com</p>
+</div>
+</section>
+<!-- Section 2: Datenerfassung -->
+<section class="space-y-8" id="collection">
+<h2 class="text-2xl font-extrabold font-manrope text-primary">2. Datenerfassung auf unserer Website</h2>
+<div class="bg-surface-container-low p-8 rounded-xl">
+<div class="flex items-start gap-4 mb-4">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">dataset</span>
+<h3 class="font-bold text-lg text-primary">Wie erfassen wir Ihre Daten?</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z. B. um Daten handeln, die Sie in ein Kontaktformular eingeben. Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst. Das sind vor allem technische Daten (z. B. Internetbrowser, Betriebssystem oder Uhrzeit des Seitenaufrufs).
+                        </p>
+</div>
+<div class="bg-white p-8 rounded-xl border-l-4 border-tertiary-fixed-dim">
+<div class="flex items-start gap-4 mb-4">
+<span class="material-symbols-outlined text-primary">gavel</span>
+<h3 class="font-bold text-lg text-primary">Rechtsgrundlage</h3>
+</div>
+<p class="text-on-surface-variant leading-relaxed">
+                            Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse besteht in der technisch fehlerfreien Darstellung und der Optimierung unserer Website.
+                        </p>
+</div>
+</section>
+<!-- Section 3: Cookies -->
+<section class="space-y-6" id="cookies">
+<h2 class="text-2xl font-extrabold font-manrope text-primary">3. Cookies und Tracking</h2>
+<p class="text-on-surface-variant">Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="p-6 bg-surface-container rounded-lg">
+<h4 class="font-bold text-primary mb-2">Notwendige Cookies</h4>
+<p class="text-sm text-on-surface-variant">Diese Cookies sind für den Betrieb der Seite technisch erforderlich und können nicht deaktiviert werden.</p>
+</div>
+<div class="p-6 bg-surface-container rounded-lg">
+<h4 class="font-bold text-primary mb-2">Analyse-Cookies</h4>
+<p class="text-sm text-on-surface-variant">Wir nutzen anonymisierte Daten zur Verbesserung unserer Lieferketten-Visualisierung und Performance-Messung.</p>
+</div>
+</div>
+</section>
+<!-- Section 4: Rights -->
+<section class="bg-primary text-on-primary p-12 rounded-xl shadow-2xl relative overflow-hidden" id="rights">
+<div class="absolute top-0 right-0 p-8 opacity-10">
+<span class="material-symbols-outlined text-9xl" style="font-variation-settings: 'wght' 700;">security</span>
+</div>
+<h2 class="text-3xl font-black font-manrope mb-8">4. Ihre Betroffenenrechte</h2>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-6 relative z-10">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span>
+<span class="font-medium">Recht auf Auskunft (Art. 15 DSGVO)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span>
+<span class="font-medium">Recht auf Löschung (Art. 17 DSGVO)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span>
+<span class="font-medium">Recht auf Berichtigung (Art. 16 DSGVO)</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">check_circle</span>
+<span class="font-medium">Datenübertragbarkeit (Art. 20 DSGVO)</span>
+</li>
+</ul>
+</section>
+<section class="pt-10 border-t border-outline-variant/20" id="contact">
+<h2 class="text-2xl font-extrabold font-manrope text-primary mb-4">Kontaktieren Sie uns</h2>
+<p class="text-on-surface-variant mb-8">Wenn Sie Fragen zum Datenschutz bei Joodi Logistics haben, wenden Sie sich bitte an unseren Datenschutzbeauftragten:</p>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex-1 p-8 bg-surface-container-highest rounded-xl">
+<span class="text-xs font-bold uppercase tracking-widest text-primary block mb-2">Support-Hotline</span>
+<span class="text-xl font-bold text-on-surface">+49 (0) 40 123 456 78</span>
+</div>
+<div class="flex-1 p-8 bg-surface-container-highest rounded-xl">
+<span class="text-xs font-bold uppercase tracking-widest text-primary block mb-2">E-Mail Support</span>
+<span class="text-xl font-bold text-on-surface">compliance@joodi.com</span>
+</div>
+</div>
+</section>
+</article>
+</div>
+</main>
+<!-- Footer Rendering based on JSON -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full py-12 border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="space-y-4">
+<div class="text-lg font-black text-blue-900 dark:text-white font-manrope">GlobalTrade</div>
+<p class="text-slate-500 dark:text-slate-400 font-inter text-xs font-medium uppercase tracking-widest">© 2024 GlobalTrade Logistics. Precision Velocity.</p>
+</div>
+<div class="flex flex-wrap gap-x-8 gap-y-4 md:justify-end">
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Imprint</a>
+<a class="font-inter text-xs font-bold uppercase tracking-widest text-blue-900 dark:text-white" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Terms of Service</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 dark:text-slate-400 hover:text-orange-500 transition-colors" href="#">Global Network</a>
+</div>
+</div>
+</footer>
+</body></html>

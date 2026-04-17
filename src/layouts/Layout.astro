@@ -1,0 +1,87 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Joodi Logistics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <style is:global>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(247, 249, 252, 0.8);
+        backdrop-filter: blur(24px);
+      }
+      .primary-gradient {
+        background: linear-gradient(135deg, #00113a 0%, #002366 100%);
+      }
+      .editorial-text {
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </head>
+  <body class="bg-surface font-body text-on-surface">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+      <div class="flex justify-between items-center px-8 py-4 max-w-full">
+        <a href="/" class="text-2xl font-bold tracking-tight text-blue-950 dark:text-blue-50 font-headline">
+          Joodi Logistics
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="/">Home</a>
+          <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="/services">Services</a>
+          <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="/about">About</a>
+          <a class="text-slate-600 dark:text-slate-400 font-medium hover:text-blue-900 transition-colors font-label" href="/contact">Contact</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-6 py-2 rounded-md font-bold text-sm hover:scale-95 duration-150">
+            Track Now
+          </button>
+        </div>
+      </div>
+    </nav>
+    
+    <main class="pt-20">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-100 dark:bg-slate-900 w-full border-t border-slate-200/15 dark:border-slate-800/15">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-12 py-12 w-full gap-8">
+        <div class="max-w-xs">
+          <div class="text-lg font-bold text-blue-950 dark:text-white mb-4">Joodi Logistics</div>
+          <p class="text-slate-500 text-sm mb-4 leading-relaxed">
+            Douglasienweg 1,<br/>
+            71364 Winnenden,<br/>
+            Germany
+          </p>
+          <div class="flex space-x-4">
+            <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="public">public</span>
+            <span class="material-symbols-outlined text-slate-400 cursor-pointer hover:text-primary transition-colors" data-icon="mail">mail</span>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-8 text-slate-500 font-label text-xs uppercase tracking-widest">
+          <a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="/imprint">Imprint</a>
+          <a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="/privacy-policy">Privacy Policy</a>
+          <a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Terms of Service</a>
+          <a class="hover:text-blue-700 dark:hover:text-blue-300 transition-opacity" href="#">Global Network</a>
+        </div>
+      </div>
+      <div class="px-12 py-6 border-t border-slate-200/5 flex justify-center md:justify-start">
+        <p class="text-[10px] uppercase tracking-[0.2em] text-slate-400">
+          © 2024 Joodi Logistics. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

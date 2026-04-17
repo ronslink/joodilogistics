@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#eceef1",
+                    "on-secondary-container": "#556474",
+                    "secondary": "#50606f",
+                    "surface-container-highest": "#e0e3e6",
+                    "on-error": "#ffffff",
+                    "tertiary": "#240f00",
+                    "surface-tint": "#435b9f",
+                    "outline-variant": "#c5c6d2",
+                    "on-surface": "#191c1e",
+                    "inverse-on-surface": "#eff1f4",
+                    "secondary-fixed": "#d4e4f6",
+                    "tertiary-fixed": "#ffdcc3",
+                    "surface": "#f7f9fc",
+                    "on-tertiary-fixed": "#2f1500",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed": "#00174a",
+                    "primary": "#00113a",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-container": "#d97600",
+                    "on-surface-variant": "#444650",
+                    "on-secondary-fixed-variant": "#394857",
+                    "surface-container-low": "#f2f4f7",
+                    "inverse-primary": "#b3c5ff",
+                    "on-background": "#191c1e",
+                    "secondary-fixed-dim": "#b8c8da",
+                    "on-secondary-fixed": "#0d1d2a",
+                    "surface-variant": "#e0e3e6",
+                    "secondary-container": "#d1e1f4",
+                    "inverse-surface": "#2d3133",
+                    "surface-dim": "#d8dadd",
+                    "on-primary-fixed-variant": "#2a4386",
+                    "primary-container": "#002366",
+                    "primary-fixed-dim": "#b3c5ff",
+                    "on-tertiary-fixed-variant": "#6e3900",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb77d",
+                    "surface-container-high": "#e6e8eb",
+                    "on-error-container": "#93000a",
+                    "primary-fixed": "#dbe1ff",
+                    "tertiary-container": "#422000",
+                    "error-container": "#ffdad6",
+                    "on-primary-container": "#758dd5",
+                    "outline": "#757682",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#f7f9fc",
+                    "background": "#f7f9fc"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #00113a 0%, #002366 100%);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .ambient-shadow {
+            shadow: 0 20px 40px rgba(25, 28, 30, 0.06);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
+<!-- TopNavBar Navigation Shell -->
+<nav class="sticky top-0 w-full z-50 glass-nav shadow-sm">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-extrabold tracking-tighter text-blue-900">Joodi International</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold text-sm tracking-wide text-blue-900 border-b-2 border-blue-900 pb-1" href="#">Home</a>
+<a class="font-headline font-bold text-sm tracking-wide text-slate-500 hover:text-blue-800 transition-colors" href="#">Services</a>
+<a class="font-headline font-bold text-sm tracking-wide text-slate-500 hover:text-blue-800 transition-colors" href="#">About</a>
+<a class="font-headline font-bold text-sm tracking-wide text-slate-500 hover:text-blue-800 transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2.5 rounded-lg font-headline font-bold text-sm active:scale-95 duration-200 transition-all hover:shadow-lg">
+                Track Shipment
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-primary py-24 md:py-32">
+<div class="absolute inset-0 z-0">
+<img alt="" class="w-full h-full object-cover opacity-40" data-alt="Massive container ship at sea during sunset with vibrant orange sky and deep blue water, high-angle cinematic aerial shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxBlNnjhxqcVMdl0156kxE9fVb2bSY25Rtk9R6t-EqbJp9ANxVK2B4JOrqXCwQbCoqGzGCK5AUYGVIDWaJLvGRBZlGeiiRfcSzeAab7jJUXmdVLePLzLPx-x16-dwKJB61DBmVvm6X7Ytpmnyr-CG-bDfDoj7ZUX_Kcwq1Vpf1JqHTMOoew6uQ-Oen4Q8u6uUxyC2Bt8zay5Saxdj-gYqZZEQFcDM_68E_J4KCnb2_Nz2vd4vYT5d2Bm7sndsnZsXtqnkdjDPrak5v"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed text-on-tertiary-fixed font-label text-[10px] uppercase tracking-[0.2em] rounded mb-6">Precision Velocity</span>
+<h1 class="font-headline font-extrabold text-5xl md:text-7xl text-white leading-tight tracking-tighter mb-8">
+                        Global Logistics, <span class="text-tertiary-fixed-dim">Simplified.</span>
+</h1>
+<p class="text-lg md:text-xl text-blue-100/80 mb-10 font-light leading-relaxed">
+                        Orchestrating complex trade routes with editorial precision. Your supply chain, reimagined through high-performance technology.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button class="bg-tertiary-fixed-dim text-on-tertiary-fixed px-8 py-4 rounded-lg font-headline font-bold flex items-center justify-center gap-2 hover:bg-tertiary-fixed transition-colors active:scale-95 duration-200">
+                            Track Now
+                            <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg font-headline font-bold hover:bg-white/20 transition-colors active:scale-95 duration-200">
+                            Explore Services
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Tracking Fast Access (Bento Style) -->
+<section class="relative -mt-12 z-20 max-w-7xl mx-auto px-8">
+<div class="bg-surface-container-lowest p-8 md:p-12 shadow-2xl rounded-xl">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+<div class="md:col-span-2">
+<h2 class="font-headline font-bold text-2xl text-primary mb-2">Real-time Visibility</h2>
+<p class="text-on-surface-variant text-sm">Enter your tracking ID or bill of lading to get instant status updates.</p>
+<div class="mt-6 flex flex-col md:flex-row gap-0 rounded-lg overflow-hidden ring-1 ring-outline-variant/15">
+<input class="flex-grow bg-surface-container-highest border-none focus:ring-0 px-6 py-4 text-primary font-medium placeholder:text-outline" placeholder="Shipment ID: e.g. GTL-8829-X" type="text"/>
+<button class="bg-primary text-on-primary px-10 py-4 font-headline font-bold active:scale-95 duration-200">
+                                Locate
+                            </button>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary p-2 bg-white rounded-full">support_agent</span>
+<div>
+<p class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Support</p>
+<p class="font-bold text-primary">24/7 Global Desk</p>
+</div>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Dedicated logistics experts available across every timezone for your peace of mind.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us (Asymmetric Editorial Layout) -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-5 order-2 lg:order-1">
+<img alt="" class="w-full aspect-[4/5] object-cover rounded-xl shadow-xl" data-alt="Close-up of a high-tech logistics control center with glowing digital world maps and data analytics on large screens" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPW-BtX4ILf740EyHMG6J-TlnQYwOFssIZKzM61ZLdtq_OSjoI-AbV0F-lnuyZKrvub7eshCR_wBX0YAYU8DBfThe0QLX-1XJMD8b7JiRR-108-xJDyqs1X-vVoN9E6OW7B0FDPmtFl7OZzXgXbM7r-oTpzyykHABUSQ_e-pj2Gs6QI27l42yqG-wOCoXr-d-XDZdJnYtDpiBO_coa2Pindy5bLDtxIjSug2hcpNmdL8R9_mKj9XOQ9e4yz6K3oPRvXckcxCutN8rn"/>
+</div>
+<div class="lg:col-span-7 order-1 lg:order-2">
+<span class="font-label text-xs uppercase tracking-[0.3em] text-on-tertiary-container font-bold mb-4 block">The Global Advantage</span>
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-primary leading-tight mb-8">
+                            Engineered for <br/>Reliability and Speed.
+                        </h2>
+<div class="space-y-12">
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">rocket_launch</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl mb-2">Automated Optimization</h3>
+<p class="text-on-surface-variant leading-relaxed">Our AI-driven routing protocols cut transit times by 22% on average by anticipating global bottleneck shifts in real-time.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">security</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl mb-2">Bulletproof Security</h3>
+<p class="text-on-surface-variant leading-relaxed">End-to-end encrypted documentation and smart-container tracking ensure your high-value assets are protected at every mile.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="flex-shrink-0 w-12 h-12 bg-primary text-white rounded-lg flex items-center justify-center">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<div>
+<h3 class="font-headline font-bold text-xl mb-2">Sustainability First</h3>
+<p class="text-on-surface-variant leading-relaxed">Committed to carbon-neutral operations by 2030 through our modern, fuel-efficient fleet and green warehousing initiatives.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Services (Modern Grid) -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-xl">
+<h2 class="font-headline font-extrabold text-4xl text-primary mb-4">Core Logistics Services</h2>
+<p class="text-on-surface-variant">We provide a comprehensive suite of logistics solutions tailored for the demands of modern global commerce.</p>
+</div>
+<button class="text-primary font-headline font-bold flex items-center gap-2 hover:gap-4 transition-all group">
+                        View All Services
+                        <span class="material-symbols-outlined text-tertiary-container group-hover:translate-x-1 transition-transform">arrow_right_alt</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-2 hover:shadow-xl group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">sailing</span>
+<h3 class="font-headline font-bold text-xl mb-4">Ocean Freight</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Global FCL and LCL shipping with guaranteed space and flexible schedules.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Global</span>
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">LCL/FCL</span>
+</div>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-2 hover:shadow-xl group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">flight_takeoff</span>
+<h3 class="font-headline font-bold text-xl mb-4">Air Cargo</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Next-day global delivery for time-sensitive cargo via our premium airline partners.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Express</span>
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Direct</span>
+</div>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-2 hover:shadow-xl group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">local_shipping</span>
+<h3 class="font-headline font-bold text-xl mb-4">Road Transport</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Intelligent trucking solutions across continents with full GPS visibility.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">FTL</span>
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Cross-Border</span>
+</div>
+</div>
+<!-- Service 4 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl transition-all hover:-translate-y-2 hover:shadow-xl group">
+<span class="material-symbols-outlined text-4xl text-primary mb-6 block group-hover:scale-110 transition-transform">warehouse</span>
+<h3 class="font-headline font-bold text-xl mb-4">Warehousing</h3>
+<p class="text-sm text-on-surface-variant leading-relaxed mb-6">Strategic distribution hubs equipped with state-of-the-art inventory systems.</p>
+<div class="flex gap-2">
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Smart</span>
+<span class="px-2 py-1 bg-secondary-container text-on-secondary-container text-[10px] rounded font-label uppercase">Bespoke</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="absolute right-0 top-0 opacity-10">
+<span class="material-symbols-outlined text-[30rem] leading-none">language</span>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center md:text-left">
+<div>
+<p class="font-headline font-extrabold text-5xl mb-2">124+</p>
+<p class="font-label text-xs uppercase tracking-widest text-blue-300">Countries Served</p>
+</div>
+<div>
+<p class="font-headline font-extrabold text-5xl mb-2">1.2M</p>
+<p class="font-label text-xs uppercase tracking-widest text-blue-300">Annual Shipments</p>
+</div>
+<div>
+<p class="font-headline font-extrabold text-5xl mb-2">99.9%</p>
+<p class="font-label text-xs uppercase tracking-widest text-blue-300">Accuracy Rate</p>
+</div>
+<div>
+<p class="font-headline font-extrabold text-5xl mb-2">24/7</p>
+<p class="font-label text-xs uppercase tracking-widest text-blue-300">Expert Monitoring</p>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="bg-tertiary-container rounded-xl p-12 md:p-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-8">
+<span class="material-symbols-outlined text-tertiary-fixed/10 text-9xl">travel_explore</span>
+</div>
+<div class="max-w-2xl relative z-10">
+<h2 class="font-headline font-extrabold text-4xl md:text-5xl text-white mb-6">Ready to optimize your global network?</h2>
+<p class="text-tertiary-fixed/80 text-lg mb-10">Connect with our logistics designers to craft a shipment strategy that drives your business forward.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-10 py-4 rounded-lg font-headline font-bold hover:bg-white transition-colors">Book a Consultation</button>
+<button class="text-white border border-white/30 px-10 py-4 rounded-lg font-headline font-bold hover:bg-white/10 transition-colors">Get a Quote</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-slate-50 border-t border-slate-200 w-full py-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto px-8">
+<div class="flex flex-col gap-6">
+<div class="text-lg font-black text-blue-900">Joodi International</div>
+<p class="text-slate-500 font-medium max-w-sm">Joodi International Logistics. Precision Velocity. Redefining the standard for modern international commerce.</p>
+<div class="text-xs font-medium uppercase tracking-widest text-slate-500">© 2024 JOODI INTERNATIONAL LOGISTICS. PRECISION VELOCITY.</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex flex-col gap-3">
+<p class="font-headline font-bold text-xs uppercase tracking-widest text-blue-900 mb-2">Network</p>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">Global Network</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">Sustainability</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">© 2024 JOODI INTERNATIONAL LOGISTICS. PRECISION VELOCITY.</a>
+</div>
+<div class="flex flex-col gap-3">
+<p class="font-headline font-bold text-xs uppercase tracking-widest text-blue-900 mb-2">Legal</p>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">Imprint</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">Privacy Policy</a>
+<a class="font-inter text-xs font-medium uppercase tracking-widest text-slate-500 hover:text-orange-500 transition-colors" href="#">© 2024 JOODI INTERNATIONAL LOGISTICS. PRECISION VELOCITY.</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
