@@ -23,3 +23,5 @@ pnpm-debug.log*
 
 # generic
 .DS_Store
+
+.vercel
